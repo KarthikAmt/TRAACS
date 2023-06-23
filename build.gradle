@@ -1,20 +1,63 @@
 plugins {
 	id 'java'
 	id 'org.springframework.boot' version '2.7.12'
+	id 'io.freefair.lombok' version '6.5.1'
 	id 'io.spring.dependency-management' version '1.0.15.RELEASE'
+	id 'com.google.protobuf' version '0.8.17'
 }
 
 group = 'com.verteil'
 version = '0.0.1-SNAPSHOT'
-sourceCompatibility = '17'
+sourceCompatibility = JavaVersion.VERSION_18
+targetCompatibility = JavaVersion.VERSION_18
 
 repositories {
 	mavenCentral()
+	mavenLocal()
+	maven {
+		url 'https://vdc-repository-683455398069.d.codeartifact.ap-south-1.amazonaws.com/maven/libs-snapshot-local/'
+		credentials {
+			username "aws"
+			password System.env.CODEARTIFACT_AUTH_TOKEN
+		}
+		mavenContent {
+			snapshotsOnly()
+		}
+	}
+	maven {
+		url 'https://vdc-repository-683455398069.d.codeartifact.ap-south-1.amazonaws.com/maven/libs-release-local/'
+		credentials {
+			username "aws"
+			password System.env.CODEARTIFACT_AUTH_TOKEN
+		}
+		mavenContent {
+			releasesOnly()
+		}
+	}
+}
+
+ext {
+	airApiV3Version = '2.2.0'
+	configuratorVersion = '2.2.11'
+	thirdPartiesNdcSchemaVersion = '1.6.0'
+	thirdPartiesVdcSchemaVersion = '1.6.0'
+	ordermangementCommonVersion = '1.0'
+	grpcVersion = '1.50.2'
+	protobufUtilVersion = '3.21.9'
 }
 
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
-	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	implementation 'org.springframework.kafka:spring-kafka'
+	implementation 'org.apache.kafka:kafka-clients'
+	implementation "com.verteil.air:api-common-v3:${airApiV3Version}"
+	implementation "com.verteil.air:api-order-v3:${airApiV3Version}"
+	implementation "com.google.protobuf:protobuf-java-util:${protobufUtilVersion}"
+    implementation 'org.projectlombok:lombok:1.18.20'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	implementation 'com.google.api.grpc:proto-google-common-protos:2.3.0'
+	implementation 'com.fasterxml.jackson.core:jackson-databind:2.13.0'
+	implementation 'com.google.protobuf:protobuf-java:3.17.3'
 }
 
 tasks.named('test') {
