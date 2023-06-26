@@ -17,10 +17,9 @@ import java.io.ObjectOutputStream;
 public class EventDeserializerUtil {
 
     public EventDeserializerUtil() {
-
     }
 
-    public static OrderChangeNotif deserializeOCNData(byte[] ocnDataBytes) {
+    public OrderChangeNotif deserializeOCNData(byte[] ocnDataBytes) {
         try {
             OrderChangeNotif orderChangeNotif = OrderChangeNotif.parseFrom(ocnDataBytes);
             if (log.isTraceEnabled()) {
@@ -33,41 +32,4 @@ public class EventDeserializerUtil {
         }
         return null;
     }
-
-    public static byte[] objectToByteArray(Object obj) {
-        try {
-            ByteArrayOutputStream byteOutStream = new ByteArrayOutputStream();
-            ObjectOutputStream objOutStream = new ObjectOutputStream(byteOutStream);
-
-            // Write the object to the output stream
-            objOutStream.writeObject(obj);
-            objOutStream.flush();
-            objOutStream.close();
-
-            // Get the byte array from the byte output stream
-            return byteOutStream.toByteArray();
-        } catch (Exception e) {
-            e.printStackTrace();
-            return null;
-        }}
-        public static String byteArrayToObject(byte[] byteArray) {
-            try {
-                ByteArrayInputStream byteInStream = new ByteArrayInputStream(byteArray);
-                ObjectInputStream objInStream = new ObjectInputStream(byteInStream);
-
-                // Read the object from the input stream
-                Object obj = objInStream.readObject();
-                objInStream.close();
-
-                // Cast the object to the appropriate type
-                if (obj instanceof String) {
-                    return (String) obj;
-                } else {
-                    throw new IllegalArgumentException("Invalid object type");
-                }
-            } catch (Exception e) {
-                e.printStackTrace();
-                return null;
-            }
-        }
-    }
+}

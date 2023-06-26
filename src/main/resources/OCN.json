@@ -504,7 +504,7 @@
                 ],
                 "bookingAgency": {
                   "agencyId": "AGY102",
-                  "travelAgentId": "faisalagent",
+                  "travelAgentId": "aisalagent",
                   "officeId": "OFF102",
                   "iataNumber": "14349646"
                 },

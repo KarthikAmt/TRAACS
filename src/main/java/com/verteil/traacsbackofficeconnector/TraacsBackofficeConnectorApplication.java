@@ -1,38 +1,22 @@
 package com.verteil.traacsbackofficeconnector;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.google.gson.Gson;
-import com.google.gson.JsonSyntaxException;
-import com.google.gson.stream.JsonReader;
 import com.google.protobuf.util.JsonFormat;
-import com.google.type.Date;
-import com.verteil.air.v3.common.Ticket;
 import com.verteil.traacsbackofficeconnector.dto.converter.ConverterImpl;
 //import com.verteil.traacsbackofficeconnector.dto.mapper.OrderChangeNotif;
-import com.verteil.traacsbackofficeconnector.dto.response.JSONDataResponseDTO;
-import com.verteil.traacsbackofficeconnector.service.JsonToPojoConverter;
+import com.verteil.traacsbackofficeconnector.service.BackOfficeIntegrationServiceImpl;
+import com.verteil.traacsbackofficeconnector.util.GenericResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.http.ResponseEntity;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.web.bind.annotation.*;
 import com.verteil.air.v3.order.notify.OrderChangeNotif;
-import com.fasterxml.jackson.databind.module.SimpleModule;
 
-import java.io.ByteArrayInputStream;
 import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.io.StringReader;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.util.Arrays;
-import java.util.List;
-import java.util.stream.Collectors;
-
-import static com.verteil.traacsbackofficeconnector.util.EventDeserializerUtil.byteArrayToObject;
-import static com.verteil.traacsbackofficeconnector.util.EventDeserializerUtil.objectToByteArray;
 
 @SpringBootApplication
 @RestController
@@ -42,7 +26,7 @@ public class TraacsBackofficeConnectorApplication {
     private KafkaTemplate<String, byte[]> template;
     private String topic = "qa_order_change_notif";
     @Autowired
-    private JsonToPojoConverter jsonToPojoConverter;
+    private BackOfficeIntegrationServiceImpl backOfficeIntegrationImpl;
     @Autowired
     ConverterImpl converterImpl;
 
@@ -50,16 +34,16 @@ public class TraacsBackofficeConnectorApplication {
     public void getDataFromTopic(byte[] bytes) {
         final var json = new String(bytes);
         final var builder = OrderChangeNotif.newBuilder();
+        ResponseEntity<GenericResponse<Object>> genericResponseResponseEntity = null;
         try {
             JsonFormat.parser().merge(json, builder);
+            OrderChangeNotif orderChangeNotif = builder.build();
+            genericResponseResponseEntity = converterImpl.jSONDataResponseDTOParser(orderChangeNotif);
         }
         catch(Exception e){
             System.out.println(e.getMessage());
         }
-        OrderChangeNotif orderChangeNotif = builder.build();
-        System.out.println(orderChangeNotif.getChangeOperationGroupList().stream().flatMap(a -> a.getChangeOperationsList().stream()
-                .flatMap(b -> b.getNew().getPaymentFunctionsList().stream()
-                        .map(c -> c.getPaymentProcessingSummary().getAmount().getCurrencyCode()))).toList());
+        System.out.println(genericResponseResponseEntity);
     }
 
 //    @PostMapping("consume")
