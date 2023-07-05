@@ -1,6 +1,5 @@
 package com.verteil.traacsbackofficeconnector.config;
 
-
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.common.serialization.ByteArrayDeserializer;
 import org.apache.kafka.common.serialization.StringDeserializer;
@@ -27,7 +26,6 @@ public class KafkaConfig {
         properties.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, ByteArrayDeserializer.class);
         properties.put(ConsumerConfig.GROUP_ID_CONFIG, "new_group_id");
         properties.put(ConsumerConfig.AUTO_OFFSET_RESET_CONFIG, "earliest");
-      // properties.put(ByteArrayDeserializer.TRUSTED_PACKAGES, "*");
         return properties;
     }
 
