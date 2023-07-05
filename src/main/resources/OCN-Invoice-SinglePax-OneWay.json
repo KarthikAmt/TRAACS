@@ -1,0 +1,304 @@
+{
+  "ownerCode": "SQ",
+  "orderId": "SQ_69G2KD",
+  "changeOperationGroup": [
+    {
+      "changeOperations": [
+        {
+          "changeType": "ORDER_ITEM_PAYMENT_COMMITTED",
+          "changeReason": "CHANGE_REQUESTED_BY_PASSENGER",
+          "changeTime": "2023-07-03T06:47:10Z",
+          "new": {
+            "order": {
+              "orderId": "SQ_69G2KD",
+              "ownerCode": "SQ",
+              "orderItems": [
+                {
+                  "orderItemId": "SQ_69G2KD_AIR-1",
+                  "ownerCode": "SQ",
+                  "price": {
+                    "totalAmount": {
+                      "currencyCode": "INR",
+                      "units": "35716"
+                    },
+                    "baseAmount": {
+                      "currencyCode": "INR",
+                      "units": "31805"
+                    },
+                    "taxSummaries": [
+                      {
+                        "totalTaxAmount": {
+                          "currencyCode": "INR",
+                          "units": "3911"
+                        }
+                      }
+                    ]
+                  },
+                  "fareDetails": [
+                    {
+                      "passengerRefs": [
+                        "PAX1"
+                      ],
+                      "price": {
+                        "totalAmount": {
+                          "currencyCode": "INR",
+                          "units": "35716"
+                        },
+                        "baseAmount": {
+                          "currencyCode": "INR",
+                          "units": "31805"
+                        },
+                        "taxSummaries": [
+                          {
+                            "totalTaxAmount": {
+                              "currencyCode": "INR",
+                              "units": "3911"
+                            },
+                            "breakdown": [
+                              {
+                                "taxCode": "L7",
+                                "amount": {
+                                  "currencyCode": "INR",
+                                  "units": "660"
+                                }
+                              },
+                              {
+                                "taxCode": "OP",
+                                "amount": {
+                                  "currencyCode": "INR",
+                                  "units": "489"
+                                }
+                              },
+                              {
+                                "taxCode": "SG",
+                                "amount": {
+                                  "currencyCode": "INR",
+                                  "units": "2650"
+                                }
+                              },
+                              {
+                                "taxCode": "ZR",
+                                "amount": {
+                                  "currencyCode": "INR",
+                                  "units": "112"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      "fareComponents": [
+                        {
+                          "cabinName": "ECONOMY",
+                          "paxSegmentRefId": [
+                            "SEG1"
+                          ],
+                          "fbc": "W14SGOPO/DP",
+                          "rbd": "W"
+                        }
+                      ]
+                    }
+                  ],
+                  "services": [
+                    {
+                      "serviceId": "BAGALLOW_1_PAX1_SEG1",
+                      "paxRefId": "PAX1",
+                      "serviceAssociation": {
+                        "serviceDefRef": {
+                          "paxSegmentRef": "SEG1",
+                          "serviceDefRefId": "BAGALLOW_1"
+                        }
+                      }
+                    },
+                    {
+                      "serviceId": "SEG1_PAX1",
+                      "paxRefId": "PAX1",
+                      "serviceAssociation": {
+                        "paxSegmentRef": "SEG1"
+                      }
+                    }
+                  ]
+                }
+              ],
+              "totalPrice": {
+                "totalAmount": {
+                  "currencyCode": "INR",
+                  "units": "36216"
+                }
+              },
+              "bookingRefs": [
+                {
+                  "bookingId": "69G2KD",
+                  "bookingEntity": {
+                    "carrierCode": "SQ"
+                  },
+                  "bookingRefType": "PNR_NUMBER"
+                }
+              ]
+            },
+            "paymentFunctions": [
+              {
+                "orderAssociation": {
+                  "orderRefId": "69G2KD",
+                  "ownerCode": "SQ",
+                  "orderItemRefId": [
+                    "SQ_69G2KD_AIR-1"
+                  ]
+                },
+                "paymentProcessingSummary": {
+                  "typeCode": "CC",
+                  "amount": {
+                    "currencyCode": "INR",
+                    "units": "36216"
+                  },
+                  "paymentStatus": "PAID",
+                  "paymentMethodDetails": {
+                    "paymentCard": {
+                      "cardBrandCode": "VI",
+                      "cardNumber": "401200XXXXXX0026"
+                    }
+                  }
+                }
+              }
+            ],
+            "ticketDocInfos": [
+              {
+                "paxRefId": "PAX1",
+                "tickets": [
+                  {
+                    "ticketNumber": "6182442393601",
+                    "coupons": [
+                      {
+                        "couponNumber": "1",
+                        "fareBasisCode": "W14SGOPO/DP",
+                        "couponStatusCode": "OPEN",
+                        "couponRefNumber": "SEG1"
+                      }
+                    ],
+                    "reportingTypeCode": "AIRLINE",
+                    "ticketDocTypeCode": "E_TICKET",
+                    "dateOfIssue": {
+                      "year": 2023,
+                      "month": 7,
+                      "day": 3
+                    },
+                    "bookletQty": 1
+                  }
+                ],
+                "bookingAgency": {
+                  "agencyId": "AGY102",
+                  "travelAgentId": "faisalagent",
+                  "officeId": "OFF102",
+                  "iataNumber": "14349646"
+                },
+                "servicingAgency": {
+                  "agencyId": "AGY102",
+                  "travelAgentId": "faisalagent",
+                  "officeId": "OFF102",
+                  "iataNumber": "14349646"
+                }
+              }
+            ],
+            "dataMap": {
+              "passengers": {
+                "PAX1": {
+                  "ptc": "ADT",
+                  "individual": {
+                    "birthdate": "1990-09-18",
+                    "titleName": "MR",
+                    "givenNames": [
+                      "MISC"
+                    ],
+                    "surname": "TEST"
+                  },
+                  "contactInfoRefId": "CT_PAX1"
+                }
+              },
+              "contactInfos": {
+                "CT_PAX1": {
+                  "phone": [
+                    {
+                      "phoneNumber": "9876543221"
+                    }
+                  ],
+                  "emailAddresses": [
+                    {
+                      "emailAddressText": "TEST@VERTEIL.COM"
+                    }
+                  ]
+                }
+              },
+              "paxSegments": {
+                "SEG1": {
+                  "dep": {
+                    "stationCode": "SIN",
+                    "terminalName": "3",
+                    "schedDateTime": "2023-07-22T15:10"
+                  },
+                  "arrival": {
+                    "stationCode": "DXB",
+                    "terminalName": "1",
+                    "schedDateTime": "2023-07-22T18:25"
+                  },
+                  "marketingInfo": {
+                    "carrierCode": "SQ",
+                    "flightNumber": "494"
+                  },
+                  "operatingInfo": {
+                    "carrierCode": "SQ"
+                  }
+                }
+              },
+              "paxJourneys": {
+                "FLT1": {
+                  "duration": "PT7H15M",
+                  "paxSegmentRefIds": [
+                    "SEG1"
+                  ]
+                }
+              },
+              "baggageAllowances": {
+                "FBA1": {
+                  "weightAllowances": [
+                    {
+                      "unit": "KG",
+                      "maxWeight": 30.0
+                    }
+                  ]
+                }
+              },
+              "serviceDefs": {
+                "BAGALLOW_1": {
+                  "name": "BAG:Checked Bag Allowance",
+                  "serviceDefAssociation": {
+                    "baggageAllowanceRefId": "FBA1"
+                  },
+                  "desc": [
+                    {
+                      "category": "BAGGAGE_CHECKEDALLOWANCE",
+                      "descTexts": [
+                        "Checked Bag Allowance"
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      ],
+      "orderVersion": 1,
+      "distributionChain": [
+        {
+          "ordinal": 1,
+          "orgRole": "SELLER",
+          "participatingOrg": {
+            "orgId": "AGY102"
+          },
+          "salesAgentId": "faisalagent",
+          "salesBranchId": "OFF102"
+        }
+      ]
+    }
+  ]
+}

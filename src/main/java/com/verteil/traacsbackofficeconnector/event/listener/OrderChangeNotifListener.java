@@ -1,58 +1,72 @@
 package com.verteil.traacsbackofficeconnector.event.listener;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.verteil.air.v3.order.notify.OrderChangeNotif;
-//import com.verteil.traacsbackofficeconnector.dto.converter.ConverterImpl;
+import com.verteil.traacsbackofficeconnector.config.WebClientConfig;
+import com.verteil.traacsbackofficeconnector.dto.response.AutoInvoiceResponseDTO;
+import com.verteil.traacsbackofficeconnector.dto.response.ParsedData;
+import com.verteil.traacsbackofficeconnector.dto.response.ParsedDataDTO;
+import com.verteil.traacsbackofficeconnector.dto.response.VoucherResponseDTO;
 import com.verteil.traacsbackofficeconnector.service.BackOfficeIntegrationService;
+import com.verteil.traacsbackofficeconnector.service.Impl.BackOfficeIntegrationServiceImpl;
+import com.verteil.traacsbackofficeconnector.service.Impl.OCNDataCollectorServiceImpl;
+import com.verteil.traacsbackofficeconnector.service.OCNDataCollectorService;
 import com.verteil.traacsbackofficeconnector.util.EventDeserializerUtil;
+import com.verteil.traacsbackofficeconnector.util.GenericResponse;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Component;
 
-import java.io.ByteArrayOutputStream;
-import java.io.IOException;
-import java.io.ObjectOutputStream;
-import java.nio.file.Files;
-import java.nio.file.Path;
+import java.util.List;
 
 @Component
 @Slf4j
 public class OrderChangeNotifListener {
     private final BackOfficeIntegrationService backOfficeIntegrationService;
-    @Autowired
-    private EventDeserializerUtil eventDeserializerUtil;
-
-//    @Autowired
-//    private ConverterImpl converterImpl;
-
+    private final EventDeserializerUtil eventDeserializerUtil;
+    private final WebClientConfig webClientConfig;
 
     @Autowired
-    public OrderChangeNotifListener(BackOfficeIntegrationService backOfficeIntegrationService) {
+    public OrderChangeNotifListener(BackOfficeIntegrationService backOfficeIntegrationService, EventDeserializerUtil eventDeserializerUtil, WebClientConfig webClientConfig) {
         this.backOfficeIntegrationService = backOfficeIntegrationService;
+        this.eventDeserializerUtil = eventDeserializerUtil;
+        this.webClientConfig = webClientConfig;
     }
 
-    @KafkaListener(topics = "qa_order_change_notif", containerFactory = "kafkaListenerContainerFactory", groupId = "new_group_id")
-    public void processOrderChangeNotify(ConsumerRecord<String, byte[]> ocnConsumerRecord) {
-        log.info("Received data with id :: {} and offset :: {}", ocnConsumerRecord.key(), ocnConsumerRecord.offset());
-        String filepath = "/home/karthik/traacs-backoffice-connector/src/main/resources/OCN.json";
-        byte[] bytes= null;
-        byte[] serializedBytes = null;
-        ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
-        try{
-                bytes = Files.readAllBytes(Path.of(filepath));
-                ObjectOutputStream objectOutputStream = new ObjectOutputStream(byteArrayOutputStream);
-                objectOutputStream.writeObject(bytes);
-                objectOutputStream.close();
-                serializedBytes = byteArrayOutputStream.toByteArray();
-                System.out.println("Serialized byte array length: " + serializedBytes.length);
-            } catch (IOException e) {
-                e.printStackTrace();
+    @KafkaListener(groupId = "new_group_id", topics = "qa_order_change_notif", containerFactory = "kafkaListenerContainerFactory")
+    public void getDataFromTopic(byte[] bytes) {
+        ObjectMapper objectMapper = new ObjectMapper();
+        OrderChangeNotif orderChangeNotif = eventDeserializerUtil.deserializeOCNData(bytes);
+        ParsedDataDTO credentails = backOfficeIntegrationService.getCredentails(orderChangeNotif);
+        Object passedObject = null;
+        if (credentails.getOfficeId() != null && credentails.getOfficeId().equalsIgnoreCase("OFF102")
+                && credentails.getTravelAgencyId() != null && credentails.getTravelAgencyId().equalsIgnoreCase("faisalagent")) {
+            AutoInvoiceResponseDTO autoInvoiceResponseDTO = backOfficeIntegrationService.invoiceResponseSender(orderChangeNotif);
+            String s = null;
+            try {
+                s = objectMapper.writeValueAsString(autoInvoiceResponseDTO);
+                passedObject = webClientConfig.callWebCLientApi(s);
+            } catch (JsonProcessingException e) {
+                throw new RuntimeException(e);
             }
-            System.out.println("Data Published");
-        OrderChangeNotif orderChangeNotif = eventDeserializerUtil.deserializeOCNData(serializedBytes);
-        System.out.println("Hi from KArthik"+ orderChangeNotif);
-        //converterImpl.jSONDataResponseDTOParser(orderChangeNotif);
-//        backOfficeIntegrationService.reportOCNDetails(orderChangeNotif);
+        } else {
+            List<VoucherResponseDTO> voucherResponseDTOList = backOfficeIntegrationService.voucherResponseSender(orderChangeNotif);
+            int iteration = 0;
+            if (voucherResponseDTOList != null && !voucherResponseDTOList.isEmpty()) {
+                iteration = voucherResponseDTOList.get(0).getJson_master().getINT_NO_OF_PAX();
+            }
+            for (int i = 0; i < iteration; i++) {
+                try {
+                    String s = objectMapper.writeValueAsString(voucherResponseDTOList.get(i));
+                    passedObject = webClientConfig.callWebCLientApi(s);
+                } catch (JsonProcessingException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+        }
+        System.out.println("Before " + passedObject);
+
     }
 }
