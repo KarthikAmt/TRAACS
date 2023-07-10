@@ -1,6 +1,8 @@
 package com.verteil.traacsbackofficeconnector.dto.response;
 
+import com.verteil.air.v3.common.FareDetail;
 import com.verteil.air.v3.common.Individual;
+import com.verteil.air.v3.common.Pax;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -29,7 +31,7 @@ public class ParsedData {
     private String fareBasisCode;
     private String airlinePNR;
     private int noOfPassengers;
-    private String paxType;
+    private List<String> paxType;
     private String travelDate;
     private String returnDate;
     private String taxCode;
@@ -41,4 +43,6 @@ public class ParsedData {
     private String officeId;
     private String travelAgentId;
     private String additionalPaxConcat;
+    private List<Pax> pax;
+    private List<FareDetail> fareDetailsList;
 }

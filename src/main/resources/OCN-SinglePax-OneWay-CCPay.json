@@ -1,35 +1,35 @@
 {
-  "ownerCode": "SQ",
-  "orderId": "SQ_69G2KD",
+  "ownerCode": "BA",
+  "orderId": "JH5ADH",
   "changeOperationGroup": [
     {
       "changeOperations": [
         {
           "changeType": "ORDER_ITEM_PAYMENT_COMMITTED",
           "changeReason": "CHANGE_REQUESTED_BY_PASSENGER",
-          "changeTime": "2023-07-03T06:47:10Z",
+          "changeTime": "2023-07-07T09:28:48Z",
           "new": {
             "order": {
-              "orderId": "SQ_69G2KD",
-              "ownerCode": "SQ",
+              "orderId": "JH5ADH",
+              "ownerCode": "BA",
               "orderItems": [
                 {
-                  "orderItemId": "SQ_69G2KD_AIR-1",
-                  "ownerCode": "SQ",
+                  "orderItemId": "JH5ADH-T2-FS1",
+                  "ownerCode": "BA",
                   "price": {
                     "totalAmount": {
-                      "currencyCode": "INR",
-                      "units": "35716"
+                      "currencyCode": "AED",
+                      "units": "2530"
                     },
                     "baseAmount": {
-                      "currencyCode": "INR",
-                      "units": "31805"
+                      "currencyCode": "AED",
+                      "units": "1720"
                     },
                     "taxSummaries": [
                       {
                         "totalTaxAmount": {
-                          "currencyCode": "INR",
-                          "units": "3911"
+                          "currencyCode": "AED",
+                          "units": "810"
                         }
                       }
                     ]
@@ -37,50 +37,35 @@
                   "fareDetails": [
                     {
                       "passengerRefs": [
-                        "PAX1"
+                        "T2"
                       ],
                       "price": {
                         "totalAmount": {
-                          "currencyCode": "INR",
-                          "units": "35716"
+                          "currencyCode": "AED",
+                          "units": "2530"
                         },
                         "baseAmount": {
-                          "currencyCode": "INR",
-                          "units": "31805"
+                          "currencyCode": "AED",
+                          "units": "1720"
                         },
                         "taxSummaries": [
                           {
                             "totalTaxAmount": {
-                              "currencyCode": "INR",
-                              "units": "3911"
+                              "units": "810"
                             },
                             "breakdown": [
                               {
-                                "taxCode": "L7",
+                                "taxCode": "YQ",
                                 "amount": {
-                                  "currencyCode": "INR",
-                                  "units": "660"
+                                  "currencyCode": "AED",
+                                  "units": "620"
                                 }
                               },
                               {
-                                "taxCode": "OP",
+                                "taxCode": "TU",
                                 "amount": {
-                                  "currencyCode": "INR",
-                                  "units": "489"
-                                }
-                              },
-                              {
-                                "taxCode": "SG",
-                                "amount": {
-                                  "currencyCode": "INR",
-                                  "units": "2650"
-                                }
-                              },
-                              {
-                                "taxCode": "ZR",
-                                "amount": {
-                                  "currencyCode": "INR",
-                                  "units": "112"
+                                  "currencyCode": "AED",
+                                  "units": "190"
                                 }
                               }
                             ]
@@ -89,32 +74,32 @@
                       },
                       "fareComponents": [
                         {
-                          "cabinName": "ECONOMY",
+                          "cabinName": "Economy",
                           "paxSegmentRefId": [
-                            "SEG1"
+                            "FS1"
                           ],
-                          "fbc": "W14SGOPO/DP",
-                          "rbd": "W"
+                          "fbc": "VNNF00S4",
+                          "rbd": "V"
                         }
                       ]
                     }
                   ],
                   "services": [
                     {
-                      "serviceId": "BAGALLOW_1_PAX1_SEG1",
-                      "paxRefId": "PAX1",
+                      "serviceId": "BASRVCHKEDBAG2_T2_FS1",
+                      "paxRefId": "T2",
                       "serviceAssociation": {
                         "serviceDefRef": {
-                          "paxSegmentRef": "SEG1",
-                          "serviceDefRefId": "BAGALLOW_1"
+                          "paxSegmentRef": "FS1",
+                          "serviceDefRefId": "BASRVCHKEDBAG2"
                         }
                       }
                     },
                     {
-                      "serviceId": "SEG1_PAX1",
-                      "paxRefId": "PAX1",
+                      "serviceId": "Svc001",
+                      "paxRefId": "T2",
                       "serviceAssociation": {
-                        "paxSegmentRef": "SEG1"
+                        "paxSegmentRef": "FS1"
                       }
                     }
                   ]
@@ -122,15 +107,15 @@
               ],
               "totalPrice": {
                 "totalAmount": {
-                  "currencyCode": "INR",
-                  "units": "36216"
+                  "currencyCode": "AED",
+                  "units": "2530"
                 }
               },
               "bookingRefs": [
                 {
-                  "bookingId": "69G2KD",
+                  "bookingId": "JH5ADH",
                   "bookingEntity": {
-                    "carrierCode": "SQ"
+                    "carrierCode": "BA"
                   },
                   "bookingRefType": "PNR_NUMBER"
                 }
@@ -139,23 +124,22 @@
             "paymentFunctions": [
               {
                 "orderAssociation": {
-                  "orderRefId": "69G2KD",
-                  "ownerCode": "SQ",
+                  "orderRefId": "JH5ADH",
+                  "ownerCode": "BA",
                   "orderItemRefId": [
-                    "SQ_69G2KD_AIR-1"
+                    "JH5ADH-T2-FS1"
                   ]
                 },
                 "paymentProcessingSummary": {
                   "typeCode": "CC",
                   "amount": {
-                    "currencyCode": "INR",
-                    "units": "36216"
+                    "currencyCode": "AED",
+                    "units": "2530"
                   },
                   "paymentStatus": "PAID",
                   "paymentMethodDetails": {
                     "paymentCard": {
-                      "cardBrandCode": "VI",
-                      "cardNumber": "401200XXXXXX0026"
+                      "cardBrandCode": "CA"
                     }
                   }
                 }
@@ -163,16 +147,16 @@
             ],
             "ticketDocInfos": [
               {
-                "paxRefId": "PAX1",
+                "paxRefId": "T2",
                 "tickets": [
                   {
-                    "ticketNumber": "6182442393601",
+                    "ticketNumber": "125-2155041832",
                     "coupons": [
                       {
                         "couponNumber": "1",
-                        "fareBasisCode": "W14SGOPO/DP",
+                        "fareBasisCode": "VNNF00S4",
                         "couponStatusCode": "OPEN",
-                        "couponRefNumber": "SEG1"
+                        "couponRefNumber": "FS1"
                       }
                     ],
                     "reportingTypeCode": "AIRLINE",
@@ -180,98 +164,91 @@
                     "dateOfIssue": {
                       "year": 2023,
                       "month": 7,
-                      "day": 3
+                      "day": 7
                     },
                     "bookletQty": 1
                   }
                 ],
                 "bookingAgency": {
-                  "agencyId": "AGY102",
+                  "agencyId": "AGY1969",
                   "travelAgentId": "apitatestuser",
                   "officeId": "OFF1953",
-                  "iataNumber": "14349646"
+                  "iataNumber": "86209966"
                 },
                 "servicingAgency": {
-                  "agencyId": "AGY102",
+                  "agencyId": "AGY1969",
                   "travelAgentId": "apitatestuser",
                   "officeId": "OFF1953",
-                  "iataNumber": "14349646"
+                  "iataNumber": "86209966"
                 }
               }
             ],
             "dataMap": {
               "passengers": {
-                "PAX1": {
+                "T2": {
                   "ptc": "ADT",
                   "individual": {
-                    "birthdate": "1990-09-18",
+                    "birthdate": "1999-08-03",
+                    "genderCode": "M",
                     "titleName": "MR",
                     "givenNames": [
-                      "MISC"
+                      "JOHN"
                     ],
-                    "surname": "TEST"
+                    "surname": "SMITH"
                   },
-                  "contactInfoRefId": "CT_PAX1"
+                  "contactInfoRefId": "CT_T2"
                 }
               },
               "contactInfos": {
-                "CT_PAX1": {
+                "CT_T2": {
                   "phone": [
                     {
-                      "phoneNumber": "9876543221"
+                      "phoneNumber": "7777300637689"
                     }
                   ],
                   "emailAddresses": [
                     {
-                      "emailAddressText": "TEST@VERTEIL.COM"
+                      "emailAddressText": "SREEKANTH.B@VERTEIL.COM"
                     }
                   ]
                 }
               },
               "paxSegments": {
-                "SEG1": {
+                "FS1": {
                   "dep": {
-                    "stationCode": "SIN",
-                    "terminalName": "3",
-                    "schedDateTime": "2023-07-22T15:10"
+                    "stationCode": "NBO",
+                    "terminalName": "1A",
+                    "schedDateTime": "2023-07-20T22:45"
                   },
                   "arrival": {
-                    "stationCode": "DXB",
-                    "terminalName": "1",
-                    "schedDateTime": "2023-07-22T18:25"
+                    "stationCode": "LHR",
+                    "terminalName": "3",
+                    "schedDateTime": "2023-07-21T05:50"
                   },
+                  "duration": "PT9H5M",
                   "marketingInfo": {
-                    "carrierCode": "SQ",
-                    "flightNumber": "494"
+                    "carrierCode": "BA",
+                    "flightNumber": "0064"
                   },
                   "operatingInfo": {
-                    "carrierCode": "SQ"
+                    "carrierCode": "BA"
                   }
                 }
               },
-              "paxJourneys": {
-                "FLT1": {
-                  "duration": "PT7H15M",
-                  "paxSegmentRefIds": [
-                    "SEG1"
-                  ]
-                }
-              },
               "baggageAllowances": {
-                "FBA1": {
-                  "weightAllowances": [
+                "BADATBAG1": {
+                  "pieceAllowances": [
                     {
-                      "unit": "KG",
-                      "maxWeight": 30.0
+                      "totalQty": 1
                     }
                   ]
                 }
               },
               "serviceDefs": {
-                "BAGALLOW_1": {
+                "BASRVCHKEDBAG2": {
                   "name": "BAG:Checked Bag Allowance",
                   "serviceDefAssociation": {
-                    "baggageAllowanceRefId": "FBA1"
+                    "baggageAllowanceRefId": "BADATBAG1"
                   },
                   "desc": [
                     {
@@ -293,10 +270,10 @@
           "ordinal": 1,
           "orgRole": "SELLER",
           "participatingOrg": {
-            "orgId": "AGY102"
+            "orgId": "AGY1969"
           },
-          "salesAgentId": "faisalagent",
-          "salesBranchId": "OFF102"
+          "salesAgentId": "apitatestuser",
+          "salesBranchId": "OFF1953"
         }
       ]
     }

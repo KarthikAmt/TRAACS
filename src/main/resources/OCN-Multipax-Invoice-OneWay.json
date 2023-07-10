@@ -1,0 +1,551 @@
+{
+  "ownerCode": "KQ",
+  "orderId": "KQ_JBULUJ",
+  "changeOperationGroup": [
+    {
+      "changeOperations": [
+        {
+          "changeType": "ORDER_ITEM_PAYMENT_COMMITTED",
+          "changeReason": "CHANGE_REQUESTED_BY_PASSENGER",
+          "changeTime": "2023-07-06T11:25:24Z",
+          "new": {
+            "order": {
+              "orderId": "KQ_JBULUJ",
+              "ownerCode": "KQ",
+              "orderItems": [
+                {
+                  "orderItemId": "KQ_JBULUJ_AIR-1",
+                  "ownerCode": "KQ",
+                  "price": {
+                    "totalAmount": {
+                      "currencyCode": "AED",
+                      "units": "7510"
+                    },
+                    "baseAmount": {
+                      "currencyCode": "AED",
+                      "units": "5470"
+                    },
+                    "taxSummaries": [
+                      {
+                        "totalTaxAmount": {
+                          "currencyCode": "AED",
+                          "units": "2040"
+                        }
+                      }
+                    ]
+                  },
+                  "fareDetails": [
+                    {
+                      "passengerRefs": [
+                        "PAX2"
+                      ],
+                      "price": {
+                        "totalAmount": {
+                          "currencyCode": "AED",
+                          "units": "3880"
+                        },
+                        "baseAmount": {
+                          "currencyCode": "AED",
+                          "units": "2810"
+                        },
+                        "taxSummaries": [
+                          {
+                            "totalTaxAmount": {
+                              "currencyCode": "AED",
+                              "units": "1070"
+                            },
+                            "breakdown": [
+                              {
+                                "taxCode": "YR",
+                                "amount": {
+                                  "currencyCode": "AED",
+                                  "units": "400"
+                                }
+                              },
+                              {
+                                "taxCode": "GB",
+                                "amount": {
+                                  "currencyCode": "AED",
+                                  "units": "410"
+                                }
+                              },
+                              {
+                                "taxCode": "UB",
+                                "amount": {
+                                  "currencyCode": "AED",
+                                  "units": "260"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      "fareComponents": [
+                        {
+                          "cabinName": "ECONOMY",
+                          "paxSegmentRefId": [
+                            "SEG1"
+                          ],
+                          "fbc": "QHSFWGB",
+                          "rbd": "Q"
+                        }
+                      ]
+                    },
+                    {
+                      "passengerRefs": [
+                        "PAX4"
+                      ],
+                      "price": {
+                        "totalAmount": {
+                          "currencyCode": "AED",
+                          "units": "2830"
+                        },
+                        "baseAmount": {
+                          "currencyCode": "AED",
+                          "units": "2170"
+                        },
+                        "taxSummaries": [
+                          {
+                            "totalTaxAmount": {
+                              "currencyCode": "AED",
+                              "units": "660"
+                            },
+                            "breakdown": [
+                              {
+                                "taxCode": "YR",
+                                "amount": {
+                                  "currencyCode": "AED",
+                                  "units": "400"
+                                }
+                              },
+                              {
+                                "taxCode": "UB",
+                                "amount": {
+                                  "currencyCode": "AED",
+                                  "units": "260"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      "fareComponents": [
+                        {
+                          "cabinName": "ECONOMY",
+                          "paxSegmentRefId": [
+                            "SEG1"
+                          ],
+                          "fbc": "QHSFWGB/CH25",
+                          "rbd": "Q"
+                        }
+                      ]
+                    },
+                    {
+                      "passengerRefs": [
+                        "PAX3"
+                      ],
+                      "price": {
+                        "totalAmount": {
+                          "currencyCode": "AED",
+                          "units": "800"
+                        },
+                        "baseAmount": {
+                          "currencyCode": "AED",
+                          "units": "490"
+                        },
+                        "taxSummaries": [
+                          {
+                            "totalTaxAmount": {
+                              "currencyCode": "AED",
+                              "units": "310"
+                            },
+                            "breakdown": [
+                              {
+                                "taxCode": "YR",
+                                "amount": {
+                                  "currencyCode": "AED",
+                                  "units": "50"
+                                }
+                              },
+                              {
+                                "taxCode": "UB",
+                                "amount": {
+                                  "currencyCode": "AED",
+                                  "units": "260"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      "fareComponents": [
+                        {
+                          "cabinName": "ECONOMY",
+                          "paxSegmentRefId": [
+                            "SEG1"
+                          ],
+                          "fbc": "QHSFWGB/IN90",
+                          "rbd": "Q"
+                        }
+                      ]
+                    }
+                  ],
+                  "services": [
+                    {
+                      "serviceId": "BAGALLOW_1_PAX2_SEG1",
+                      "paxRefId": "PAX2",
+                      "serviceAssociation": {
+                        "serviceDefRef": {
+                          "paxSegmentRef": "SEG1",
+                          "serviceDefRefId": "BAGALLOW_1"
+                        }
+                      }
+                    },
+                    {
+                      "serviceId": "SEG1_PAX2",
+                      "paxRefId": "PAX2",
+                      "serviceAssociation": {
+                        "paxSegmentRef": "SEG1"
+                      }
+                    },
+                    {
+                      "serviceId": "BAGALLOW_1_PAX4_SEG1",
+                      "paxRefId": "PAX4",
+                      "serviceAssociation": {
+                        "serviceDefRef": {
+                          "paxSegmentRef": "SEG1",
+                          "serviceDefRefId": "BAGALLOW_1"
+                        }
+                      }
+                    },
+                    {
+                      "serviceId": "SEG1_PAX4",
+                      "paxRefId": "PAX4",
+                      "serviceAssociation": {
+                        "paxSegmentRef": "SEG1"
+                      }
+                    },
+                    {
+                      "serviceId": "BAGALLOW_2_PAX3_SEG1",
+                      "paxRefId": "PAX3",
+                      "serviceAssociation": {
+                        "serviceDefRef": {
+                          "paxSegmentRef": "SEG1",
+                          "serviceDefRefId": "BAGALLOW_2"
+                        }
+                      }
+                    },
+                    {
+                      "serviceId": "SEG1_PAX3",
+                      "paxRefId": "PAX3",
+                      "serviceAssociation": {
+                        "paxSegmentRef": "SEG1"
+                      }
+                    }
+                  ]
+                }
+              ],
+              "totalPrice": {
+                "totalAmount": {
+                  "currencyCode": "AED",
+                  "units": "7510"
+                }
+              },
+              "bookingRefs": [
+                {
+                  "bookingId": "JBULUJ",
+                  "bookingEntity": {
+                    "carrierCode": "KQ"
+                  },
+                  "bookingRefType": "PNR_NUMBER"
+                }
+              ]
+            },
+            "paymentFunctions": [
+              {
+                "orderAssociation": {
+                  "orderRefId": "JBULUJ",
+                  "ownerCode": "KQ",
+                  "orderItemRefId": [
+                    "KQ_JBULUJ_AIR-1"
+                  ]
+                },
+                "paymentProcessingSummary": {
+                  "typeCode": "CA",
+                  "amount": {
+                    "currencyCode": "AED",
+                    "units": "7510"
+                  },
+                  "paymentStatus": "PAID"
+                }
+              }
+            ],
+            "ticketDocInfos": [
+              {
+                "paxRefId": "PAX2",
+                "tickets": [
+                  {
+                    "ticketNumber": "7062303792659",
+                    "coupons": [
+                      {
+                        "couponNumber": "1",
+                        "fareBasisCode": "QHSFWGB",
+                        "couponStatusCode": "OPEN",
+                        "couponRefNumber": "SEG1"
+                      }
+                    ],
+                    "reportingTypeCode": "AIRLINE",
+                    "ticketDocTypeCode": "E_TICKET",
+                    "dateOfIssue": {
+                      "year": 2023,
+                      "month": 7,
+                      "day": 6
+                    },
+                    "bookletQty": 1
+                  }
+                ],
+                "bookingAgency": {
+                  "agencyId": "AGY1969",
+                  "travelAgentId": "apitatestuser",
+                  "officeId": "OFF1953",
+                  "iataNumber": "86209966"
+                },
+                "servicingAgency": {
+                  "agencyId": "AGY1969",
+                  "travelAgentId": "apitatestuser",
+                  "officeId": "OFF1953",
+                  "iataNumber": "86209966"
+                }
+              },
+              {
+                "paxRefId": "PAX3",
+                "tickets": [
+                  {
+                    "ticketNumber": "7062303792661",
+                    "coupons": [
+                      {
+                        "couponNumber": "1",
+                        "fareBasisCode": "QHSFWGB/IN90",
+                        "couponStatusCode": "OPEN",
+                        "couponRefNumber": "SEG1"
+                      }
+                    ],
+                    "reportingTypeCode": "AIRLINE",
+                    "ticketDocTypeCode": "E_TICKET",
+                    "dateOfIssue": {
+                      "year": 2023,
+                      "month": 7,
+                      "day": 6
+                    },
+                    "bookletQty": 1
+                  }
+                ],
+                "bookingAgency": {
+                  "agencyId": "AGY1969",
+                  "travelAgentId": "apitatestuser",
+                  "officeId": "OFF1953",
+                  "iataNumber": "86209966"
+                },
+                "servicingAgency": {
+                  "agencyId": "AGY1969",
+                  "travelAgentId": "apitatestuser",
+                  "officeId": "OFF1953",
+                  "iataNumber": "86209966"
+                }
+              },
+              {
+                "paxRefId": "PAX4",
+                "tickets": [
+                  {
+                    "ticketNumber": "7062303792660",
+                    "coupons": [
+                      {
+                        "couponNumber": "1",
+                        "fareBasisCode": "QHSFWGB/CH25",
+                        "couponStatusCode": "OPEN",
+                        "couponRefNumber": "SEG1"
+                      }
+                    ],
+                    "reportingTypeCode": "AIRLINE",
+                    "ticketDocTypeCode": "E_TICKET",
+                    "dateOfIssue": {
+                      "year": 2023,
+                      "month": 7,
+                      "day": 6
+                    },
+                    "bookletQty": 1
+                  }
+                ],
+                "bookingAgency": {
+                  "agencyId": "AGY1969",
+                  "travelAgentId": "apitatestuser",
+                  "officeId": "OFF1953",
+                  "iataNumber": "86209966"
+                },
+                "servicingAgency": {
+                  "agencyId": "AGY1969",
+                  "travelAgentId": "apitatestuser",
+                  "officeId": "OFF1953",
+                  "iataNumber": "86209966"
+                }
+              }
+            ],
+            "dataMap": {
+              "passengers": {
+                "PAX4": {
+                  "ptc": "CHD",
+                  "individual": {
+                    "birthdate": "2015-02-17",
+                    "titleName": "MSTR",
+                    "givenNames": [
+                      "JADE"
+                    ],
+                    "surname": "MURM"
+                  },
+                  "contactInfoRefId": "CT_PAX4"
+                },
+                "PAX3": {
+                  "ptc": "INF",
+                  "individual": {
+                    "birthdate": "2022-09-18",
+                    "titleName": "MISS",
+                    "givenNames": [
+                      "RIYA"
+                    ],
+                    "surname": "NOISE"
+                  }
+                },
+                "PAX2": {
+                  "ptc": "ADT",
+                  "individual": {
+                    "birthdate": "1992-12-19",
+                    "titleName": "MR",
+                    "givenNames": [
+                      "JOHN"
+                    ],
+                    "surname": "DARE"
+                  },
+                  "contactInfoRefId": "CT_PAX2"
+                }
+              },
+              "contactInfos": {
+                "CT_PAX2": {
+                  "phone": [
+                    {
+                      "phoneNumber": "9878987890"
+                    }
+                  ],
+                  "emailAddresses": [
+                    {
+                      "emailAddressText": "SREEKANTH.B@VERTEIL.COM"
+                    }
+                  ]
+                },
+                "CT_PAX4": {
+                  "phone": [
+                    {
+                      "phoneNumber": "9878987890"
+                    }
+                  ],
+                  "emailAddresses": [
+                    {
+                      "emailAddressText": "SREEKANTH.B@VERTEIL.COM"
+                    }
+                  ]
+                }
+              },
+              "paxSegments": {
+                "SEG1": {
+                  "dep": {
+                    "stationCode": "LHR",
+                    "terminalName": "4",
+                    "schedDateTime": "2023-07-20T18:25"
+                  },
+                  "arrival": {
+                    "stationCode": "NBO",
+                    "terminalName": "1A",
+                    "schedDateTime": "2023-07-21T05:00"
+                  },
+                  "marketingInfo": {
+                    "carrierCode": "KQ",
+                    "flightNumber": "101"
+                  },
+                  "operatingInfo": {
+                    "carrierCode": "KQ"
+                  }
+                }
+              },
+              "paxJourneys": {
+                "FLT1": {
+                  "duration": "PT8H35M",
+                  "paxSegmentRefIds": [
+                    "SEG1"
+                  ]
+                }
+              },
+              "baggageAllowances": {
+                "FBA1": {
+                  "pieceAllowances": [
+                    {
+                      "totalQty": 2
+                    }
+                  ]
+                },
+                "FBA2": {
+                  "weightAllowances": [
+                    {
+                      "unit": "KG",
+                      "maxWeight": 12
+                    }
+                  ]
+                }
+              },
+              "serviceDefs": {
+                "BAGALLOW_2": {
+                  "name": "BAG:Checked Bag Allowance",
+                  "serviceDefAssociation": {
+                    "baggageAllowanceRefId": "FBA2"
+                  },
+                  "desc": [
+                    {
+                      "category": "BAGGAGE_CHECKEDALLOWANCE",
+                      "descTexts": [
+                        "Checked Bag Allowance"
+                      ]
+                    }
+                  ]
+                },
+                "BAGALLOW_1": {
+                  "name": "BAG:Checked Bag Allowance",
+                  "serviceDefAssociation": {
+                    "baggageAllowanceRefId": "FBA1"
+                  },
+                  "desc": [
+                    {
+                      "category": "BAGGAGE_CHECKEDALLOWANCE",
+                      "descTexts": [
+                        "Checked Bag Allowance"
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      ],
+      "orderVersion": 1,
+      "distributionChain": [
+        {
+          "ordinal": 1,
+          "orgRole": "SELLER",
+          "participatingOrg": {
+            "orgId": "AGY1969"
+          },
+          "salesAgentId": "apitatestuser",
+          "salesBranchId": "OFF1953"
+        }
+      ]
+    }
+  ]
+}

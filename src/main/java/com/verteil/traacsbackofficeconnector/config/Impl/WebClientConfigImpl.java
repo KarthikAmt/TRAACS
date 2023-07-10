@@ -14,8 +14,8 @@ import reactor.core.Disposable;
 public class WebClientConfigImpl implements WebClientConfig {
     @Override
     public Object callWebCLientApi(Object genericResponseResponseEntity) {
-     // WebClient webClient = WebClient.create("http://localhost:8080");
-       WebClient webClient = WebClient.create("https://trans-arabian.traacs.co:4433/nucorelib/common_api_integration/create_or_update_ticket");
+      WebClient webClient = WebClient.create("http://localhost:8080");
+     //  WebClient webClient = WebClient.create("https://trans-arabian.traacs.co:4433/nucorelib/common_api_integration/create_or_update_ticket");
         while (true) {
             String json = null;
             assert genericResponseResponseEntity != null;
@@ -26,19 +26,19 @@ public class WebClientConfigImpl implements WebClientConfig {
             } catch (JsonProcessingException e) {
                 throw new RuntimeException(e);
             }
-//            Disposable resource = webClient.post()
-//                    .uri("/resource")
-//                    .contentType(MediaType.APPLICATION_JSON)
-//                    .bodyValue(json)
-//                    .retrieve()
-//                    .bodyToMono(String.class)
-//                    .subscribe(System.out::println);
             Disposable resource = webClient.post()
+                    .uri("/resource")
                     .contentType(MediaType.APPLICATION_JSON)
                     .bodyValue(json)
                     .retrieve()
                     .bodyToMono(String.class)
                     .subscribe(System.out::println);
+//            Disposable resource = webClient.post()
+//                    .contentType(MediaType.APPLICATION_JSON)
+//                    .bodyValue(json)
+//                    .retrieve()
+//                    .bodyToMono(String.class)
+//                    .subscribe(System.out::println);
             break;
 
         }

@@ -1,0 +1,1076 @@
+{
+  "ownerCode": "BA",
+  "orderId": "JHEDC9",
+  "changeOperationGroup": [
+    {
+      "changeOperations": [
+        {
+          "changeType": "ORDER_ITEM_PAYMENT_COMMITTED",
+          "changeReason": "CHANGE_REQUESTED_BY_PASSENGER",
+          "changeTime": "2023-07-07T10:35:43Z",
+          "new": {
+            "order": {
+              "orderId": "JHEDC9",
+              "ownerCode": "BA",
+              "orderItems": [
+                {
+                  "orderItemId": "JHEDC9-T5-FS1-FS2",
+                  "ownerCode": "BA",
+                  "price": {
+                    "totalAmount": {
+                      "currencyCode": "AED",
+                      "units": "1400"
+                    },
+                    "baseAmount": {
+                      "currencyCode": "AED",
+                      "units": "1070"
+                    },
+                    "taxSummaries": [
+                      {
+                        "totalTaxAmount": {
+                          "currencyCode": "AED",
+                          "units": "330"
+                        }
+                      }
+                    ]
+                  },
+                  "fareDetails": [
+                    {
+                      "passengerRefs": [
+                        "T5"
+                      ],
+                      "price": {
+                        "totalAmount": {
+                          "currencyCode": "AED",
+                          "units": "1400"
+                        },
+                        "baseAmount": {
+                          "currencyCode": "AED",
+                          "units": "1070"
+                        },
+                        "taxSummaries": [
+                          {
+                            "totalTaxAmount": {
+                              "units": "330"
+                            },
+                            "breakdown": [
+                              {
+                                "taxCode": "YQ",
+                                "amount": {
+                                  "currencyCode": "AED",
+                                  "units": "60"
+                                }
+                              },
+                              {
+                                "taxCode": "UB",
+                                "amount": {
+                                  "currencyCode": "AED",
+                                  "units": "110"
+                                }
+                              },
+                              {
+                                "taxCode": "FR",
+                                "amount": {
+                                  "currencyCode": "AED",
+                                  "units": "20"
+                                }
+                              },
+                              {
+                                "taxCode": "FR",
+                                "amount": {
+                                  "currencyCode": "AED",
+                                  "units": "60"
+                                }
+                              },
+                              {
+                                "taxCode": "IZ",
+                                "amount": {
+                                  "currencyCode": "AED",
+                                  "units": "10"
+                                }
+                              },
+                              {
+                                "taxCode": "O4",
+                                "amount": {
+                                  "currencyCode": "AED",
+                                  "units": "10"
+                                }
+                              },
+                              {
+                                "taxCode": "QX",
+                                "amount": {
+                                  "currencyCode": "AED",
+                                  "units": "60"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      "fareComponents": [
+                        {
+                          "cabinName": "Economy",
+                          "paxSegmentRefId": [
+                            "FS1"
+                          ],
+                          "fbc": "MPM0Z0R/CH",
+                          "rbd": "M"
+                        },
+                        {
+                          "cabinName": "Economy",
+                          "paxSegmentRefId": [
+                            "FS2"
+                          ],
+                          "fbc": "KFM0Z0R/CH",
+                          "rbd": "K"
+                        }
+                      ]
+                    }
+                  ],
+                  "services": [
+                    {
+                      "serviceId": "BASRVCHKEDBAG9_T5_FS1",
+                      "paxRefId": "T5",
+                      "serviceAssociation": {
+                        "serviceDefRef": {
+                          "paxSegmentRef": "FS1",
+                          "serviceDefRefId": "BASRVCHKEDBAG9"
+                        }
+                      }
+                    },
+                    {
+                      "serviceId": "BASRVCHKEDBAG10_T5_FS2",
+                      "paxRefId": "T5",
+                      "serviceAssociation": {
+                        "serviceDefRef": {
+                          "paxSegmentRef": "FS2",
+                          "serviceDefRefId": "BASRVCHKEDBAG10"
+                        }
+                      }
+                    },
+                    {
+                      "serviceId": "Svc001",
+                      "paxRefId": "T5",
+                      "serviceAssociation": {
+                        "paxSegmentRef": "FS1"
+                      }
+                    },
+                    {
+                      "serviceId": "Svc002",
+                      "paxRefId": "T5",
+                      "serviceAssociation": {
+                        "paxSegmentRef": "FS2"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "orderItemId": "JHEDC9-INFT2-FS1-FS2",
+                  "ownerCode": "BA",
+                  "price": {
+                    "totalAmount": {
+                      "currencyCode": "AED",
+                      "units": "280"
+                    },
+                    "baseAmount": {
+                      "currencyCode": "AED",
+                      "units": "110"
+                    },
+                    "taxSummaries": [
+                      {
+                        "totalTaxAmount": {
+                          "currencyCode": "AED",
+                          "units": "170"
+                        }
+                      }
+                    ]
+                  },
+                  "fareDetails": [
+                    {
+                      "passengerRefs": [
+                        "INFT2"
+                      ],
+                      "price": {
+                        "totalAmount": {
+                          "currencyCode": "AED",
+                          "units": "280"
+                        },
+                        "baseAmount": {
+                          "currencyCode": "AED",
+                          "units": "110"
+                        },
+                        "taxSummaries": [
+                          {
+                            "totalTaxAmount": {
+                              "units": "170"
+                            },
+                            "breakdown": [
+                              {
+                                "taxCode": "YQ",
+                                "amount": {
+                                  "currencyCode": "AED",
+                                  "units": "60"
+                                }
+                              },
+                              {
+                                "taxCode": "UB",
+                                "amount": {
+                                  "currencyCode": "AED",
+                                  "units": "110"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      "fareComponents": [
+                        {
+                          "cabinName": "Economy",
+                          "paxSegmentRefId": [
+                            "FS1"
+                          ],
+                          "fbc": "MPM0Z0R/IN",
+                          "rbd": "M"
+                        },
+                        {
+                          "cabinName": "Economy",
+                          "paxSegmentRefId": [
+                            "FS2"
+                          ],
+                          "fbc": "KFM0Z0R/IN",
+                          "rbd": "K"
+                        }
+                      ]
+                    }
+                  ],
+                  "services": [
+                    {
+                      "serviceId": "BASRVCHKEDBAG13_INFT2_FS1",
+                      "paxRefId": "INFT2",
+                      "serviceAssociation": {
+                        "serviceDefRef": {
+                          "paxSegmentRef": "FS1",
+                          "serviceDefRefId": "BASRVCHKEDBAG13"
+                        }
+                      }
+                    },
+                    {
+                      "serviceId": "BASRVCHKEDBAG14_INFT2_FS2",
+                      "paxRefId": "INFT2",
+                      "serviceAssociation": {
+                        "serviceDefRef": {
+                          "paxSegmentRef": "FS2",
+                          "serviceDefRefId": "BASRVCHKEDBAG14"
+                        }
+                      }
+                    },
+                    {
+                      "serviceId": "Svc003",
+                      "paxRefId": "INFT2",
+                      "serviceAssociation": {
+                        "paxSegmentRef": "FS1"
+                      }
+                    },
+                    {
+                      "serviceId": "Svc004",
+                      "paxRefId": "INFT2",
+                      "serviceAssociation": {
+                        "paxSegmentRef": "FS2"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "orderItemId": "JHEDC9-T2-FS1-FS2",
+                  "ownerCode": "BA",
+                  "price": {
+                    "totalAmount": {
+                      "currencyCode": "AED",
+                      "units": "1470"
+                    },
+                    "baseAmount": {
+                      "currencyCode": "AED",
+                      "units": "1070"
+                    },
+                    "taxSummaries": [
+                      {
+                        "totalTaxAmount": {
+                          "currencyCode": "AED",
+                          "units": "400"
+                        }
+                      }
+                    ]
+                  },
+                  "fareDetails": [
+                    {
+                      "passengerRefs": [
+                        "T2"
+                      ],
+                      "price": {
+                        "totalAmount": {
+                          "currencyCode": "AED",
+                          "units": "1470"
+                        },
+                        "baseAmount": {
+                          "currencyCode": "AED",
+                          "units": "1070"
+                        },
+                        "taxSummaries": [
+                          {
+                            "totalTaxAmount": {
+                              "units": "400"
+                            },
+                            "breakdown": [
+                              {
+                                "taxCode": "YQ",
+                                "amount": {
+                                  "currencyCode": "AED",
+                                  "units": "60"
+                                }
+                              },
+                              {
+                                "taxCode": "GB",
+                                "amount": {
+                                  "currencyCode": "AED",
+                                  "units": "70"
+                                }
+                              },
+                              {
+                                "taxCode": "UB",
+                                "amount": {
+                                  "currencyCode": "AED",
+                                  "units": "110"
+                                }
+                              },
+                              {
+                                "taxCode": "FR",
+                                "amount": {
+                                  "currencyCode": "AED",
+                                  "units": "20"
+                                }
+                              },
+                              {
+                                "taxCode": "FR",
+                                "amount": {
+                                  "currencyCode": "AED",
+                                  "units": "60"
+                                }
+                              },
+                              {
+                                "taxCode": "IZ",
+                                "amount": {
+                                  "currencyCode": "AED",
+                                  "units": "10"
+                                }
+                              },
+                              {
+                                "taxCode": "O4",
+                                "amount": {
+                                  "currencyCode": "AED",
+                                  "units": "10"
+                                }
+                              },
+                              {
+                                "taxCode": "QX",
+                                "amount": {
+                                  "currencyCode": "AED",
+                                  "units": "60"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      "fareComponents": [
+                        {
+                          "cabinName": "Economy",
+                          "paxSegmentRefId": [
+                            "FS1"
+                          ],
+                          "fbc": "MPM0Z0R/AP04",
+                          "rbd": "M"
+                        },
+                        {
+                          "cabinName": "Economy",
+                          "paxSegmentRefId": [
+                            "FS2"
+                          ],
+                          "fbc": "KFM0Z0R/AP04",
+                          "rbd": "K"
+                        }
+                      ]
+                    }
+                  ],
+                  "services": [
+                    {
+                      "serviceId": "BASRVCHKEDBAG15_T2_FS1",
+                      "paxRefId": "T2",
+                      "serviceAssociation": {
+                        "serviceDefRef": {
+                          "paxSegmentRef": "FS1",
+                          "serviceDefRefId": "BASRVCHKEDBAG15"
+                        }
+                      }
+                    },
+                    {
+                      "serviceId": "BASRVCHKEDBAG16_T2_FS2",
+                      "paxRefId": "T2",
+                      "serviceAssociation": {
+                        "serviceDefRef": {
+                          "paxSegmentRef": "FS2",
+                          "serviceDefRefId": "BASRVCHKEDBAG16"
+                        }
+                      }
+                    },
+                    {
+                      "serviceId": "Svc005",
+                      "paxRefId": "T2",
+                      "serviceAssociation": {
+                        "paxSegmentRef": "FS1"
+                      }
+                    },
+                    {
+                      "serviceId": "Svc006",
+                      "paxRefId": "T2",
+                      "serviceAssociation": {
+                        "paxSegmentRef": "FS2"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "orderItemId": "JHEDC9-T4-FS1-FS2",
+                  "ownerCode": "BA",
+                  "price": {
+                    "totalAmount": {
+                      "currencyCode": "AED",
+                      "units": "1470"
+                    },
+                    "baseAmount": {
+                      "currencyCode": "AED",
+                      "units": "1070"
+                    },
+                    "taxSummaries": [
+                      {
+                        "totalTaxAmount": {
+                          "currencyCode": "AED",
+                          "units": "400"
+                        }
+                      }
+                    ]
+                  },
+                  "fareDetails": [
+                    {
+                      "passengerRefs": [
+                        "T4"
+                      ],
+                      "price": {
+                        "totalAmount": {
+                          "currencyCode": "AED",
+                          "units": "1470"
+                        },
+                        "baseAmount": {
+                          "currencyCode": "AED",
+                          "units": "1070"
+                        },
+                        "taxSummaries": [
+                          {
+                            "totalTaxAmount": {
+                              "units": "400"
+                            },
+                            "breakdown": [
+                              {
+                                "taxCode": "YQ",
+                                "amount": {
+                                  "currencyCode": "AED",
+                                  "units": "60"
+                                }
+                              },
+                              {
+                                "taxCode": "GB",
+                                "amount": {
+                                  "currencyCode": "AED",
+                                  "units": "70"
+                                }
+                              },
+                              {
+                                "taxCode": "UB",
+                                "amount": {
+                                  "currencyCode": "AED",
+                                  "units": "110"
+                                }
+                              },
+                              {
+                                "taxCode": "FR",
+                                "amount": {
+                                  "currencyCode": "AED",
+                                  "units": "20"
+                                }
+                              },
+                              {
+                                "taxCode": "FR",
+                                "amount": {
+                                  "currencyCode": "AED",
+                                  "units": "60"
+                                }
+                              },
+                              {
+                                "taxCode": "IZ",
+                                "amount": {
+                                  "currencyCode": "AED",
+                                  "units": "10"
+                                }
+                              },
+                              {
+                                "taxCode": "O4",
+                                "amount": {
+                                  "currencyCode": "AED",
+                                  "units": "10"
+                                }
+                              },
+                              {
+                                "taxCode": "QX",
+                                "amount": {
+                                  "currencyCode": "AED",
+                                  "units": "60"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      "fareComponents": [
+                        {
+                          "cabinName": "Economy",
+                          "paxSegmentRefId": [
+                            "FS1"
+                          ],
+                          "fbc": "MPM0Z0R/AP04",
+                          "rbd": "M"
+                        },
+                        {
+                          "cabinName": "Economy",
+                          "paxSegmentRefId": [
+                            "FS2"
+                          ],
+                          "fbc": "KFM0Z0R/AP04",
+                          "rbd": "K"
+                        }
+                      ]
+                    }
+                  ],
+                  "services": [
+                    {
+                      "serviceId": "BASRVCHKEDBAG11_T4_FS1",
+                      "paxRefId": "T4",
+                      "serviceAssociation": {
+                        "serviceDefRef": {
+                          "paxSegmentRef": "FS1",
+                          "serviceDefRefId": "BASRVCHKEDBAG11"
+                        }
+                      }
+                    },
+                    {
+                      "serviceId": "BASRVCHKEDBAG12_T4_FS2",
+                      "paxRefId": "T4",
+                      "serviceAssociation": {
+                        "serviceDefRef": {
+                          "paxSegmentRef": "FS2",
+                          "serviceDefRefId": "BASRVCHKEDBAG12"
+                        }
+                      }
+                    },
+                    {
+                      "serviceId": "Svc007",
+                      "paxRefId": "T4",
+                      "serviceAssociation": {
+                        "paxSegmentRef": "FS1"
+                      }
+                    },
+                    {
+                      "serviceId": "Svc008",
+                      "paxRefId": "T4",
+                      "serviceAssociation": {
+                        "paxSegmentRef": "FS2"
+                      }
+                    }
+                  ]
+                }
+              ],
+              "totalPrice": {
+                "totalAmount": {
+                  "currencyCode": "AED",
+                  "units": "4620"
+                }
+              },
+              "bookingRefs": [
+                {
+                  "bookingId": "JHEDC9",
+                  "bookingEntity": {
+                    "carrierCode": "BA"
+                  },
+                  "bookingRefType": "PNR_NUMBER"
+                }
+              ]
+            },
+            "paymentFunctions": [
+              {
+                "orderAssociation": {
+                  "orderRefId": "JHEDC9",
+                  "ownerCode": "BA",
+                  "orderItemRefId": [
+                    "JHEDC9-INFT2-FS1-FS2",
+                    "JHEDC9-T4-FS1-FS2",
+                    "JHEDC9-T2-FS1-FS2",
+                    "JHEDC9-T5-FS1-FS2"
+                  ]
+                },
+                "paymentProcessingSummary": {
+                  "typeCode": "CC",
+                  "amount": {
+                    "currencyCode": "AED",
+                    "units": "4620"
+                  },
+                  "paymentStatus": "PAID",
+                  "paymentMethodDetails": {
+                    "paymentCard": {
+                      "cardBrandCode": "VI",
+                      "cardNumber": "40XXXXXXXXXX0026"
+                    }
+                  }
+                }
+              }
+            ],
+            "ticketDocInfos": [
+              {
+                "paxRefId": "T5",
+                "tickets": [
+                  {
+                    "ticketNumber": "125-2155041837",
+                    "coupons": [
+                      {
+                        "couponNumber": "1",
+                        "fareBasisCode": "MPM0Z0R/CH",
+                        "couponStatusCode": "OPEN",
+                        "couponRefNumber": "FS1"
+                      },
+                      {
+                        "couponNumber": "2",
+                        "fareBasisCode": "KFM0Z0R/CH",
+                        "couponStatusCode": "OPEN",
+                        "couponRefNumber": "FS2"
+                      }
+                    ],
+                    "reportingTypeCode": "AIRLINE",
+                    "ticketDocTypeCode": "E_TICKET",
+                    "dateOfIssue": {
+                      "year": 2023,
+                      "month": 7,
+                      "day": 7
+                    },
+                    "bookletQty": 1
+                  }
+                ],
+                "bookingAgency": {
+                  "agencyId": "AGY1969",
+                  "travelAgentId": "apitatestuser",
+                  "officeId": "OFF1953",
+                  "iataNumber": "86209966"
+                },
+                "servicingAgency": {
+                  "agencyId": "AGY1969",
+                  "travelAgentId": "apitatestuser",
+                  "officeId": "OFF1953",
+                  "iataNumber": "86209966"
+                }
+              },
+              {
+                "paxRefId": "T4",
+                "tickets": [
+                  {
+                    "ticketNumber": "125-2155041838",
+                    "coupons": [
+                      {
+                        "couponNumber": "1",
+                        "fareBasisCode": "MPM0Z0R/AP04",
+                        "couponStatusCode": "OPEN",
+                        "couponRefNumber": "FS1"
+                      },
+                      {
+                        "couponNumber": "2",
+                        "fareBasisCode": "KFM0Z0R/AP04",
+                        "couponStatusCode": "OPEN",
+                        "couponRefNumber": "FS2"
+                      }
+                    ],
+                    "reportingTypeCode": "AIRLINE",
+                    "ticketDocTypeCode": "E_TICKET",
+                    "dateOfIssue": {
+                      "year": 2023,
+                      "month": 7,
+                      "day": 7
+                    },
+                    "bookletQty": 1
+                  }
+                ],
+                "bookingAgency": {
+                  "agencyId": "AGY1969",
+                  "travelAgentId": "apitatestuser",
+                  "officeId": "OFF1953",
+                  "iataNumber": "86209966"
+                },
+                "servicingAgency": {
+                  "agencyId": "AGY1969",
+                  "travelAgentId": "apitatestuser",
+                  "officeId": "OFF1953",
+                  "iataNumber": "86209966"
+                }
+              },
+              {
+                "paxRefId": "INFT2",
+                "tickets": [
+                  {
+                    "ticketNumber": "125-2155041839",
+                    "coupons": [
+                      {
+                        "couponNumber": "1",
+                        "fareBasisCode": "MPM0Z0R/IN",
+                        "couponStatusCode": "OPEN",
+                        "couponRefNumber": "FS1"
+                      },
+                      {
+                        "couponNumber": "2",
+                        "fareBasisCode": "KFM0Z0R/IN",
+                        "couponStatusCode": "OPEN",
+                        "couponRefNumber": "FS2"
+                      }
+                    ],
+                    "reportingTypeCode": "AIRLINE",
+                    "ticketDocTypeCode": "E_TICKET",
+                    "dateOfIssue": {
+                      "year": 2023,
+                      "month": 7,
+                      "day": 7
+                    },
+                    "bookletQty": 1
+                  }
+                ],
+                "bookingAgency": {
+                  "agencyId": "AGY1969",
+                  "travelAgentId": "apitatestuser",
+                  "officeId": "OFF1953",
+                  "iataNumber": "86209966"
+                },
+                "servicingAgency": {
+                  "agencyId": "AGY1969",
+                  "travelAgentId": "apitatestuser",
+                  "officeId": "OFF1953",
+                  "iataNumber": "86209966"
+                }
+              },
+              {
+                "paxRefId": "T2",
+                "tickets": [
+                  {
+                    "ticketNumber": "125-2155041840",
+                    "coupons": [
+                      {
+                        "couponNumber": "1",
+                        "fareBasisCode": "MPM0Z0R/AP04",
+                        "couponStatusCode": "OPEN",
+                        "couponRefNumber": "FS1"
+                      },
+                      {
+                        "couponNumber": "2",
+                        "fareBasisCode": "KFM0Z0R/AP04",
+                        "couponStatusCode": "OPEN",
+                        "couponRefNumber": "FS2"
+                      }
+                    ],
+                    "reportingTypeCode": "AIRLINE",
+                    "ticketDocTypeCode": "E_TICKET",
+                    "dateOfIssue": {
+                      "year": 2023,
+                      "month": 7,
+                      "day": 7
+                    },
+                    "bookletQty": 1
+                  }
+                ],
+                "bookingAgency": {
+                  "agencyId": "AGY1969",
+                  "travelAgentId": "apitatestuser",
+                  "officeId": "OFF1953",
+                  "iataNumber": "86209966"
+                },
+                "servicingAgency": {
+                  "agencyId": "AGY1969",
+                  "travelAgentId": "apitatestuser",
+                  "officeId": "OFF1953",
+                  "iataNumber": "86209966"
+                }
+              }
+            ],
+            "dataMap": {
+              "passengers": {
+                "T4": {
+                  "ptc": "ADT",
+                  "individual": {
+                    "birthdate": "2000-11-17",
+                    "genderCode": "M",
+                    "titleName": "MR",
+                    "givenNames": [
+                      "GABRIEL"
+                    ],
+                    "surname": "PAUL"
+                  },
+                  "contactInfoRefId": "CT_T4"
+                },
+                "T5": {
+                  "ptc": "CHD",
+                  "individual": {
+                    "birthdate": "2015-01-18",
+                    "genderCode": "M",
+                    "titleName": "MSTR",
+                    "givenNames": [
+                      "SMITH"
+                    ],
+                    "surname": "BACKSTORM"
+                  }
+                },
+                "INFT2": {
+                  "ptc": "INF",
+                  "individual": {
+                    "birthdate": "2022-08-17",
+                    "genderCode": "M",
+                    "titleName": "MSTR",
+                    "givenNames": [
+                      "ALAN"
+                    ],
+                    "surname": "GEORGE"
+                  }
+                },
+                "T2": {
+                  "ptc": "ADT",
+                  "individual": {
+                    "birthdate": "1990-10-16",
+                    "genderCode": "M",
+                    "titleName": "MR",
+                    "givenNames": [
+                      "MAX"
+                    ],
+                    "surname": "MUSTERMANN"
+                  },
+                  "contactInfoRefId": "CT_T2"
+                }
+              },
+              "contactInfos": {
+                "CT_T4": {
+                  "phone": [
+                    {
+                      "phoneNumber": "7777669595551"
+                    }
+                  ],
+                  "emailAddresses": [
+                    {
+                      "emailAddressText": "SREEKANTH.B@VERTEIL.COM"
+                    }
+                  ]
+                },
+                "CT_T2": {
+                  "phone": [
+                    {
+                      "phoneNumber": "7777669595551"
+                    }
+                  ],
+                  "emailAddresses": [
+                    {
+                      "emailAddressText": "SREEKANTH.B@VERTEIL.COM"
+                    }
+                  ]
+                }
+              },
+              "paxSegments": {
+                "FS2": {
+                  "dep": {
+                    "stationCode": "CDG",
+                    "terminalName": "2B",
+                    "schedDateTime": "2023-07-30T21:15"
+                  },
+                  "arrival": {
+                    "stationCode": "LHR",
+                    "terminalName": "5",
+                    "schedDateTime": "2023-07-30T21:25"
+                  },
+                  "duration": "PT1H10M",
+                  "marketingInfo": {
+                    "carrierCode": "BA",
+                    "flightNumber": "0327"
+                  },
+                  "operatingInfo": {
+                    "carrierCode": "BA"
+                  }
+                },
+                "FS1": {
+                  "dep": {
+                    "stationCode": "LHR",
+                    "terminalName": "5",
+                    "schedDateTime": "2023-07-23T18:05"
+                  },
+                  "arrival": {
+                    "stationCode": "CDG",
+                    "terminalName": "2B",
+                    "schedDateTime": "2023-07-23T20:25"
+                  },
+                  "duration": "PT1H20M",
+                  "marketingInfo": {
+                    "carrierCode": "BA",
+                    "flightNumber": "0322"
+                  },
+                  "operatingInfo": {
+                    "carrierCode": "BA"
+                  }
+                }
+              },
+              "baggageAllowances": {
+                "BADATBAG0": {
+                  "pieceAllowances": [
+                    {
+                      "totalQty": 0
+                    }
+                  ]
+                }
+              },
+              "serviceDefs": {
+                "BASRVCHKEDBAG15": {
+                  "name": "BAG:Checked Bag Allowance",
+                  "serviceDefAssociation": {
+                    "baggageAllowanceRefId": "BADATBAG0"
+                  },
+                  "desc": [
+                    {
+                      "category": "BAGGAGE_CHECKEDALLOWANCE",
+                      "descTexts": [
+                        "Checked Bag Allowance"
+                      ]
+                    }
+                  ]
+                },
+                "BASRVCHKEDBAG14": {
+                  "name": "BAG:Checked Bag Allowance",
+                  "serviceDefAssociation": {
+                    "baggageAllowanceRefId": "BADATBAG0"
+                  },
+                  "desc": [
+                    {
+                      "category": "BAGGAGE_CHECKEDALLOWANCE",
+                      "descTexts": [
+                        "Checked Bag Allowance"
+                      ]
+                    }
+                  ]
+                },
+                "BASRVCHKEDBAG13": {
+                  "name": "BAG:Checked Bag Allowance",
+                  "serviceDefAssociation": {
+                    "baggageAllowanceRefId": "BADATBAG0"
+                  },
+                  "desc": [
+                    {
+                      "category": "BAGGAGE_CHECKEDALLOWANCE",
+                      "descTexts": [
+                        "Checked Bag Allowance"
+                      ]
+                    }
+                  ]
+                },
+                "BASRVCHKEDBAG12": {
+                  "name": "BAG:Checked Bag Allowance",
+                  "serviceDefAssociation": {
+                    "baggageAllowanceRefId": "BADATBAG0"
+                  },
+                  "desc": [
+                    {
+                      "category": "BAGGAGE_CHECKEDALLOWANCE",
+                      "descTexts": [
+                        "Checked Bag Allowance"
+                      ]
+                    }
+                  ]
+                },
+                "BASRVCHKEDBAG11": {
+                  "name": "BAG:Checked Bag Allowance",
+                  "serviceDefAssociation": {
+                    "baggageAllowanceRefId": "BADATBAG0"
+                  },
+                  "desc": [
+                    {
+                      "category": "BAGGAGE_CHECKEDALLOWANCE",
+                      "descTexts": [
+                        "Checked Bag Allowance"
+                      ]
+                    }
+                  ]
+                },
+                "BASRVCHKEDBAG10": {
+                  "name": "BAG:Checked Bag Allowance",
+                  "serviceDefAssociation": {
+                    "baggageAllowanceRefId": "BADATBAG0"
+                  },
+                  "desc": [
+                    {
+                      "category": "BAGGAGE_CHECKEDALLOWANCE",
+                      "descTexts": [
+                        "Checked Bag Allowance"
+                      ]
+                    }
+                  ]
+                },
+                "BASRVCHKEDBAG9": {
+                  "name": "BAG:Checked Bag Allowance",
+                  "serviceDefAssociation": {
+                    "baggageAllowanceRefId": "BADATBAG0"
+                  },
+                  "desc": [
+                    {
+                      "category": "BAGGAGE_CHECKEDALLOWANCE",
+                      "descTexts": [
+                        "Checked Bag Allowance"
+                      ]
+                    }
+                  ]
+                },
+                "BASRVCHKEDBAG16": {
+                  "name": "BAG:Checked Bag Allowance",
+                  "serviceDefAssociation": {
+                    "baggageAllowanceRefId": "BADATBAG0"
+                  },
+                  "desc": [
+                    {
+                      "category": "BAGGAGE_CHECKEDALLOWANCE",
+                      "descTexts": [
+                        "Checked Bag Allowance"
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      ],
+      "orderVersion": 1,
+      "distributionChain": [
+        {
+          "ordinal": 1,
+          "orgRole": "SELLER",
+          "participatingOrg": {
+            "orgId": "AGY1969"
+          },
+          "salesAgentId": "apitatestuser",
+          "salesBranchId": "OFF1953"
+        }
+      ]
+    }
+  ]
+}

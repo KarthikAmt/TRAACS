@@ -60,6 +60,8 @@ dependencies {
 	implementation 'com.google.protobuf:protobuf-java:3.17.3'
 	implementation 'org.springframework.boot:spring-boot-starter-webflux'
 	implementation 'io.projectreactor:reactor-core'
+	implementation 'org.apache.httpcomponents:httpclient:4.5.13'
+
 }
 
 tasks.named('test') {
