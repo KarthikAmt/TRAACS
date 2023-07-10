@@ -1,1 +1,1197 @@
-{"ownerCode":"EK","orderId":"EK176HYDE5XA3","changeOperationGroup":[{"changeOperations":[{"changeType":"ORDER_ITEM_PAYMENT_COMMITTED","changeReason":"CHANGE_REQUESTED_BY_PASSENGER","changeTime":"2023-07-04T10:32:05Z","new":{"order":{"orderId":"EK176HYDE5XA3","ownerCode":"EK","orderItems":[{"orderItemId":"P6EA6D4BD-22B0-4C1D-8CF28tdxdkpbswr4e-1-1","ownerCode":"EK","price":{"totalAmount":{"currencyCode":"AED","units":"4020"},"baseAmount":{"currencyCode":"AED","units":"2360"},"taxSummaries":[{"totalTaxAmount":{"currencyCode":"AED","units":"1660"}}]},"fareDetails":[{"passengerRefs":["T1","T3"],"price":{"totalAmount":{"currencyCode":"AED","units":"2010"},"baseAmount":{"currencyCode":"AED","units":"1180"},"taxSummaries":[{"totalTaxAmount":{"units":"830"},"breakdown":[{"taxCode":"TU","amount":{"currencyCode":"AED","units":"190"}},{"taxCode":"ZR","amount":{"currencyCode":"AED","units":"5"}},{"taxCode":"F6","amount":{"currencyCode":"AED","units":"35"}},{"taxCode":"YQ","amount":{"currencyCode":"AED","units":"310"}},{"taxCode":"YQ","amount":{"currencyCode":"AED","units":"290"}}]}]},"fareComponents":[{"cabinName":"Economy Economy","paxSegmentRefId":["S4"],"fbc":"QLSOPKE1","rbd":"Q"},{"cabinName":"Economy Economy","paxSegmentRefId":["S5"],"fbc":"QLSOPKE1","rbd":"Q"}]}],"services":[{"serviceId":"BASRV53133F4A_T1_S4","paxRefId":"T1","serviceAssociation":{"serviceDefRef":{"paxSegmentRef":"S4","serviceDefRefId":"BASRV53133F4A"}}},{"serviceId":"BASRV53133F4A_T1_S5","paxRefId":"T1","serviceAssociation":{"serviceDefRef":{"paxSegmentRef":"S5","serviceDefRefId":"BASRV53133F4A"}}},{"serviceId":"BASRV53133F4A_T3_S4","paxRefId":"T3","serviceAssociation":{"serviceDefRef":{"paxSegmentRef":"S4","serviceDefRefId":"BASRV53133F4A"}}},{"serviceId":"BASRV53133F4A_T3_S5","paxRefId":"T3","serviceAssociation":{"serviceDefRef":{"paxSegmentRef":"S5","serviceDefRefId":"BASRV53133F4A"}}},{"serviceId":"BASRV654A9845-CO_T1_S4","paxRefId":"T1","serviceAssociation":{"serviceDefRef":{"paxSegmentRef":"S4","serviceDefRefId":"BASRV654A9845-CO"}}},{"serviceId":"BASRV654A9845-CO_T1_S5","paxRefId":"T1","serviceAssociation":{"serviceDefRef":{"paxSegmentRef":"S5","serviceDefRefId":"BASRV654A9845-CO"}}},{"serviceId":"BASRV654A9845-CO_T3_S4","paxRefId":"T3","serviceAssociation":{"serviceDefRef":{"paxSegmentRef":"S4","serviceDefRefId":"BASRV654A9845-CO"}}},{"serviceId":"BASRV654A9845-CO_T3_S5","paxRefId":"T3","serviceAssociation":{"serviceDefRef":{"paxSegmentRef":"S5","serviceDefRefId":"BASRV654A9845-CO"}}},{"serviceId":"SRV1-T1-S4","paxRefId":"T1","serviceAssociation":{"paxSegmentRef":"S4"}},{"serviceId":"SRV1-T1-S5","paxRefId":"T1","serviceAssociation":{"paxSegmentRef":"S5"}},{"serviceId":"SRV1-T3-S4","paxRefId":"T3","serviceAssociation":{"paxSegmentRef":"S4"}},{"serviceId":"SRV1-T3-S5","paxRefId":"T3","serviceAssociation":{"paxSegmentRef":"S5"}}]},{"orderItemId":"P6EA6D4BD-22B0-4C1D-8CF28tdxdkpbswr4e-1-2","ownerCode":"EK","price":{"totalAmount":{"currencyCode":"AED","units":"1720"},"baseAmount":{"currencyCode":"AED","units":"890"},"taxSummaries":[{"totalTaxAmount":{"currencyCode":"AED","units":"830"}}]},"fareDetails":[{"passengerRefs":["T2"],"price":{"totalAmount":{"currencyCode":"AED","units":"1720"},"baseAmount":{"currencyCode":"AED","units":"890"},"taxSummaries":[{"totalTaxAmount":{"units":"830"},"breakdown":[{"taxCode":"TU","amount":{"currencyCode":"AED","units":"190"}},{"taxCode":"ZR","amount":{"currencyCode":"AED","units":"5"}},{"taxCode":"F6","amount":{"currencyCode":"AED","units":"35"}},{"taxCode":"YQ","amount":{"currencyCode":"AED","units":"310"}},{"taxCode":"YQ","amount":{"currencyCode":"AED","units":"290"}}]}]},"fareComponents":[{"cabinName":"Economy Economy","paxSegmentRefId":["S4"],"fbc":"QLSOPKE1CH","rbd":"Q"},{"cabinName":"Economy Economy","paxSegmentRefId":["S5"],"fbc":"QLSOPKE1CH","rbd":"Q"}]}],"services":[{"serviceId":"BASRV53133F4A_T2_S4","paxRefId":"T2","serviceAssociation":{"serviceDefRef":{"paxSegmentRef":"S4","serviceDefRefId":"BASRV53133F4A"}}},{"serviceId":"BASRV53133F4A_T2_S5","paxRefId":"T2","serviceAssociation":{"serviceDefRef":{"paxSegmentRef":"S5","serviceDefRefId":"BASRV53133F4A"}}},{"serviceId":"BASRV654A9845-CO_T2_S4","paxRefId":"T2","serviceAssociation":{"serviceDefRef":{"paxSegmentRef":"S4","serviceDefRefId":"BASRV654A9845-CO"}}},{"serviceId":"BASRV654A9845-CO_T2_S5","paxRefId":"T2","serviceAssociation":{"serviceDefRef":{"paxSegmentRef":"S5","serviceDefRefId":"BASRV654A9845-CO"}}},{"serviceId":"SRV2-T2-S4","paxRefId":"T2","serviceAssociation":{"paxSegmentRef":"S4"}},{"serviceId":"SRV2-T2-S5","paxRefId":"T2","serviceAssociation":{"paxSegmentRef":"S5"}}]},{"orderItemId":"P6EA6D4BD-22B0-4C1D-8CF28tdxdkpbswr4e-1-3","ownerCode":"EK","price":{"totalAmount":{"currencyCode":"AED","units":"120"},"baseAmount":{"currencyCode":"AED","units":"120"},"taxSummaries":[{"totalTaxAmount":{"currencyCode":"AED"}}]},"fareDetails":[{"passengerRefs":["T3.1"],"price":{"totalAmount":{"currencyCode":"AED","units":"120"},"baseAmount":{"currencyCode":"AED","units":"120"},"taxSummaries":[{"totalTaxAmount":{}}]},"fareComponents":[{"cabinName":"Economy Economy","paxSegmentRefId":["S4"],"fbc":"QLSOPKE1IN","rbd":"Q"},{"cabinName":"Economy Economy","paxSegmentRefId":["S5"],"fbc":"QLSOPKE1IN","rbd":"Q"}]}],"services":[{"serviceId":"BASRV5E948D0E_T3.1_S4","paxRefId":"T3.1","serviceAssociation":{"serviceDefRef":{"paxSegmentRef":"S4","serviceDefRefId":"BASRV5E948D0E"}}},{"serviceId":"BASRV5E948D0E_T3.1_S5","paxRefId":"T3.1","serviceAssociation":{"serviceDefRef":{"paxSegmentRef":"S5","serviceDefRefId":"BASRV5E948D0E"}}},{"serviceId":"BASRV53E2CFBA-CO_T3.1_S4","paxRefId":"T3.1","serviceAssociation":{"serviceDefRef":{"paxSegmentRef":"S4","serviceDefRefId":"BASRV53E2CFBA-CO"}}},{"serviceId":"BASRV53E2CFBA-CO_T3.1_S5","paxRefId":"T3.1","serviceAssociation":{"serviceDefRef":{"paxSegmentRef":"S5","serviceDefRefId":"BASRV53E2CFBA-CO"}}},{"serviceId":"SRV3-T3.1-S4","paxRefId":"T3.1","serviceAssociation":{"paxSegmentRef":"S4"}},{"serviceId":"SRV3-T3.1-S5","paxRefId":"T3.1","serviceAssociation":{"paxSegmentRef":"S5"}}]}],"totalPrice":{"totalAmount":{"currencyCode":"AED","units":"5860"}},"bookingRefs":[{"bookingId":"GGTJHF","bookingEntity":{"carrierCode":"EK"},"bookingRefType":"PNR_NUMBER"}]},"paymentFunctions":[{"orderAssociation":{"orderRefId":"GGTJHF","ownerCode":"EK","orderItemRefId":["P6EA6D4BD-22B0-4C1D-8CF28tdxdkpbswr4e-1-1","P6EA6D4BD-22B0-4C1D-8CF28tdxdkpbswr4e-1-2","P6EA6D4BD-22B0-4C1D-8CF28tdxdkpbswr4e-1-3"]},"paymentProcessingSummary":{"typeCode":"CA","amount":{"currencyCode":"AED","units":"5860"},"paymentStatus":"PAID"}}],"ticketDocInfos":[{"paxRefId":"T1","tickets":[{"ticketNumber":"17657453366173","coupons":[{"couponNumber":"1","fareBasisCode":"QLSOPKE1","couponStatusCode":"OPEN","couponRefNumber":"S4"},{"couponNumber":"2","fareBasisCode":"QLSOPKE1","couponStatusCode":"OPEN","couponRefNumber":"S5"}],"reportingTypeCode":"AIRLINE","ticketDocTypeCode":"E_TICKET","dateOfIssue":{"year":2023,"month":7,"day":4},"bookletQty":1}],"bookingAgency":{"agencyId":"AGY1969","travelAgentId":"apitatestuser","officeId":"OFF1953","iataNumber":"86209966"},"servicingAgency":{"agencyId":"AGY1969","travelAgentId":"apitatestuser","officeId":"OFF1953","iataNumber":"86209966"}},{"paxRefId":"T3","tickets":[{"ticketNumber":"17657453366184","coupons":[{"couponNumber":"1","fareBasisCode":"QLSOPKE1","couponStatusCode":"OPEN","couponRefNumber":"S4"},{"couponNumber":"2","fareBasisCode":"QLSOPKE1","couponStatusCode":"OPEN","couponRefNumber":"S5"}],"reportingTypeCode":"AIRLINE","ticketDocTypeCode":"E_TICKET","dateOfIssue":{"year":2023,"month":7,"day":4},"bookletQty":1}],"bookingAgency":{"agencyId":"AGY1969","travelAgentId":"apitatestuser","officeId":"OFF1953","iataNumber":"86209966"},"servicingAgency":{"agencyId":"AGY1969","travelAgentId":"apitatestuser","officeId":"OFF1953","iataNumber":"86209966"}},{"paxRefId":"T3.1","tickets":[{"ticketNumber":"17657453366195","coupons":[{"couponNumber":"1","fareBasisCode":"QLSOPKE1IN","couponStatusCode":"OPEN","couponRefNumber":"S4"},{"couponNumber":"2","fareBasisCode":"QLSOPKE1IN","couponStatusCode":"OPEN","couponRefNumber":"S5"}],"reportingTypeCode":"AIRLINE","ticketDocTypeCode":"E_TICKET","dateOfIssue":{"year":2023,"month":7,"day":4},"bookletQty":1}],"bookingAgency":{"agencyId":"AGY1969","travelAgentId":"apitatestuser","officeId":"OFF1953","iataNumber":"86209966"},"servicingAgency":{"agencyId":"AGY1969","travelAgentId":"apitatestuser","officeId":"OFF1953","iataNumber":"86209966"}},{"paxRefId":"T2","tickets":[{"ticketNumber":"17657453366206","coupons":[{"couponNumber":"1","fareBasisCode":"QLSOPKE1CH","couponStatusCode":"OPEN","couponRefNumber":"S4"},{"couponNumber":"2","fareBasisCode":"QLSOPKE1CH","couponStatusCode":"OPEN","couponRefNumber":"S5"}],"reportingTypeCode":"AIRLINE","ticketDocTypeCode":"E_TICKET","dateOfIssue":{"year":2023,"month":7,"day":4},"bookletQty":1}],"bookingAgency":{"agencyId":"AGY1969","travelAgentId":"apitatestuser","officeId":"OFF1953","iataNumber":"86209966"},"servicingAgency":{"agencyId":"AGY1969","travelAgentId":"apitatestuser","officeId":"OFF1953","iataNumber":"86209966"}}],"dataMap":{"passengers":{"T3.1":{"ptc":"INF","individual":{"birthdate":"2022-07-10","genderCode":"F","givenNames":["RITA"],"surname":"JAMES"}},"T1":{"ptc":"ADT","individual":{"birthdate":"1994-12-18","genderCode":"M","titleName":"MR","givenNames":["HARSHA"],"surname":"BANGALORE"},"contactInfoRefId":"CT_T1"},"T2":{"ptc":"CHD","individual":{"birthdate":"2017-02-16","genderCode":"M","titleName":"MSTR","givenNames":["JOHN"],"surname":"ELEN"},"contactInfoRefId":"CT_T2"},"T3":{"ptc":"ADT","individual":{"birthdate":"2000-01-17","genderCode":"M","titleName":"MR","givenNames":["ANUMON"],"surname":"KERALA"},"contactInfoRefId":"CT_T3"}},"contactInfos":{"CT_T3":{"phone":[{"phoneNumber":"97108989898989"}],"emailAddresses":[{"emailAddressText":"SREEKANTH.B@VERTEIL.COM"}]},"CT_T2":{"phone":[{"phoneNumber":"97108989898989"}],"emailAddresses":[{"emailAddressText":"SREEKANTH.B@VERTEIL.COM"}]},"CT_T1":{"phone":[{"phoneNumber":"97108989898989"}],"emailAddresses":[{"emailAddressText":"SREEKANTH.B@VERTEIL.COM"}]}},"paxSegments":{"S4":{"dep":{"stationCode":"NBO","terminalName":"1B","schedDateTime":"2023-07-12T22:45"},"arrival":{"stationCode":"DXB","terminalName":"3","schedDateTime":"2023-07-13T04:50"},"duration":"PT5H5M","marketingInfo":{"carrierCode":"EK","flightNumber":"0722"}},"S5":{"dep":{"stationCode":"DXB","terminalName":"3","schedDateTime":"2023-07-13T08:20"},"arrival":{"stationCode":"CDG","terminalName":"1","schedDateTime":"2023-07-13T13:30"},"duration":"PT7H10M","marketingInfo":{"carrierCode":"EK","flightNumber":"0073"}}},"baggageAllowances":{"BA4708ABBF":{"pieceAllowances":[{"totalQty":2}]},"BAB7FD8A10-CO":{"pieceAllowances":[{"totalQty":1}]},"BA41FD60CA":{"pieceAllowances":[{"totalQty":1}]},"BAEA227E4D-CO":{"pieceAllowances":[{"totalQty":1}]}},"serviceDefs":{"ServiceID12CHLD":{"name":"CHLD","desc":[{"descTexts":["HK","16FEB17"]}]},"ServiceID3TKNE":{"name":"TKNE","desc":[{"descTexts":["HK","INF1765745336619C2"]}]},"ServiceID14DOCS":{"name":"DOCS","desc":[{"descTexts":["HK","////17JAN00/M//KERALA/ANUMON"]}]},"A-OC-ICE":{"name":"ICE entertainment","rfic":"A","rficSubCode":"ICE","desc":[{"descTexts":["ICE entertainment","Included"]}]},"A-OC-35M":{"name":"35% miles earned","rfic":"A","rficSubCode":"35M","desc":[{"descTexts":["35% miles earned","Included"]}]},"BASRV53E2CFBA-CO":{"name":"BAG:Carry On Bag Allowance","serviceDefAssociation":{"baggageAllowanceRefId":"BAEA227E4D-CO"},"desc":[{"category":"BAGGAGE_CARRYONALLOWANCE","descTexts":["Carry On Bag Allowance"]}]},"ServiceID8TKNE":{"name":"TKNE","desc":[{"descTexts":["HK","1765745336618C1"]}]},"ServiceID2TKNE":{"name":"TKNE","desc":[{"descTexts":["HK","1765745336620C2"]}]},"ServiceID10INFT":{"name":"INFT","desc":[{"descTexts":["HK","JAMES/RITA 10JUL22"]}]},"A-OC-MUC":{"name":"UPGRADE:Mileage upgrade eligibility at time of check-in","rfic":"A","rficSubCode":"MUC","desc":[{"descTexts":["Mileage upgrade eligibility at time of check-in","Included"]}]},"BASRV5E948D0E":{"name":"BAG:Checked Bag Allowance","serviceDefAssociation":{"baggageAllowanceRefId":"BA41FD60CA"},"desc":[{"category":"BAGGAGE_CHECKEDALLOWANCE","descTexts":["Checked Bag Allowance"]}]},"ServiceID15DOCS":{"name":"DOCS","desc":[{"descTexts":["HK","////16FEB17/M//ELEN/JOHN"]}]},"A-OC-HBG":{"name":"BAG:Hand luggage x 1 bag 7KG","rfic":"A","rficSubCode":"HBG","desc":[{"category":"BAGGAGE","descTexts":["Hand luggage x 1 bag 7KG","Included"]}]},"BASRV654A9845-CO":{"name":"BAG:Carry On Bag Allowance","serviceDefAssociation":{"baggageAllowanceRefId":"BAB7FD8A10-CO"},"desc":[{"category":"BAGGAGE_CARRYONALLOWANCE","descTexts":["Carry On Bag Allowance"]}]},"ServiceID7TKNE":{"name":"TKNE","desc":[{"descTexts":["HK","INF1765745336619C1"]}]},"ServiceID11INFT":{"name":"INFT","desc":[{"descTexts":["HK","JAMES/RITA 10JUL22"]}]},"ServiceID6TKNE":{"name":"TKNE","desc":[{"descTexts":["HK","1765745336620C1"]}]},"ServiceID9TKNE":{"name":"TKNE","desc":[{"descTexts":["HK","1765745336617C1"]}]},"ServiceID13DOCS":{"name":"DOCS","desc":[{"descTexts":["HK","////10JUL22/FI//JAMES/RITA"]}]},"A-OC-ALC":{"name":"Soft and Alcoholic refreshments","rfic":"A","rficSubCode":"ALC","desc":[{"descTexts":["Soft and Alcoholic refreshments","Included"]}]},"A-OC-WIF-ENT":{"name":"Complimentary Wi-Fi","rfic":"A","rficSubCode":"WIF","desc":[{"descTexts":["Complimentary Wi-Fi","Included"]}]},"ServiceID4TKNE":{"name":"TKNE","desc":[{"descTexts":["HK","1765745336618C2"]}]},"BASRV53133F4A":{"name":"BAG:Checked Bag Allowance","serviceDefAssociation":{"baggageAllowanceRefId":"BA4708ABBF"},"desc":[{"category":"BAGGAGE_CHECKEDALLOWANCE","descTexts":["Checked Bag Allowance"]}]},"ServiceID16DOCS":{"name":"DOCS","desc":[{"descTexts":["HK","////18DEC94/M//BANGALORE/HARSHA"]}]},"ServiceID1OSI1":{"name":"OSI1","desc":[{"descTexts":["OFFICE 408 AL FAJER COMPLEX UMM HURAIR RD OUD METHA PO BOX2403 DUBAI 2403 AE-1KERALA/ANUMONMR2403 DUBAI 2403 AE-1BANGALORE/HARSHAMR2403 DUBAI 2403 AE"]}]},"ServiceID5TKNE":{"name":"TKNE","desc":[{"descTexts":["HK","1765745336617C2"]}]}}}}}],"orderVersion":1,"distributionChain":[{"ordinal":1,"orgRole":"SELLER","participatingOrg":{"orgId":"AGY1969"},"salesAgentId":"apitatestuser","salesBranchId":"OFF1953"}]}]}
+{
+  "ownerCode": "EK",
+  "orderId": "EK176HYDE5XA3",
+  "changeOperationGroup": [
+    {
+      "changeOperations": [
+        {
+          "changeType": "ORDER_ITEM_PAYMENT_COMMITTED",
+          "changeReason": "CHANGE_REQUESTED_BY_PASSENGER",
+          "changeTime": "2023-07-04T10:32:05Z",
+          "new": {
+            "order": {
+              "orderId": "EK176HYDE5XA3",
+              "ownerCode": "EK",
+              "orderItems": [
+                {
+                  "orderItemId": "P6EA6D4BD-22B0-4C1D-8CF28tdxdkpbswr4e-1-1",
+                  "ownerCode": "EK",
+                  "price": {
+                    "totalAmount": {
+                      "currencyCode": "AED",
+                      "units": "4020"
+                    },
+                    "baseAmount": {
+                      "currencyCode": "AED",
+                      "units": "2360"
+                    },
+                    "taxSummaries": [
+                      {
+                        "totalTaxAmount": {
+                          "currencyCode": "AED",
+                          "units": "1660"
+                        }
+                      }
+                    ]
+                  },
+                  "fareDetails": [
+                    {
+                      "passengerRefs": [
+                        "T1",
+                        "T3"
+                      ],
+                      "price": {
+                        "totalAmount": {
+                          "currencyCode": "AED",
+                          "units": "2010"
+                        },
+                        "baseAmount": {
+                          "currencyCode": "AED",
+                          "units": "1180"
+                        },
+                        "taxSummaries": [
+                          {
+                            "totalTaxAmount": {
+                              "units": "830"
+                            },
+                            "breakdown": [
+                              {
+                                "taxCode": "TU",
+                                "amount": {
+                                  "currencyCode": "AED",
+                                  "units": "190"
+                                }
+                              },
+                              {
+                                "taxCode": "ZR",
+                                "amount": {
+                                  "currencyCode": "AED",
+                                  "units": "5"
+                                }
+                              },
+                              {
+                                "taxCode": "F6",
+                                "amount": {
+                                  "currencyCode": "AED",
+                                  "units": "35"
+                                }
+                              },
+                              {
+                                "taxCode": "YQ",
+                                "amount": {
+                                  "currencyCode": "AED",
+                                  "units": "310"
+                                }
+                              },
+                              {
+                                "taxCode": "YQ",
+                                "amount": {
+                                  "currencyCode": "AED",
+                                  "units": "290"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      "fareComponents": [
+                        {
+                          "cabinName": "Economy Economy",
+                          "paxSegmentRefId": [
+                            "S4"
+                          ],
+                          "fbc": "QLSOPKE1",
+                          "rbd": "Q"
+                        },
+                        {
+                          "cabinName": "Economy Economy",
+                          "paxSegmentRefId": [
+                            "S5"
+                          ],
+                          "fbc": "QLSOPKE1",
+                          "rbd": "Q"
+                        }
+                      ]
+                    }
+                  ],
+                  "services": [
+                    {
+                      "serviceId": "BASRV53133F4A_T1_S4",
+                      "paxRefId": "T1",
+                      "serviceAssociation": {
+                        "serviceDefRef": {
+                          "paxSegmentRef": "S4",
+                          "serviceDefRefId": "BASRV53133F4A"
+                        }
+                      }
+                    },
+                    {
+                      "serviceId": "BASRV53133F4A_T1_S5",
+                      "paxRefId": "T1",
+                      "serviceAssociation": {
+                        "serviceDefRef": {
+                          "paxSegmentRef": "S5",
+                          "serviceDefRefId": "BASRV53133F4A"
+                        }
+                      }
+                    },
+                    {
+                      "serviceId": "BASRV53133F4A_T3_S4",
+                      "paxRefId": "T3",
+                      "serviceAssociation": {
+                        "serviceDefRef": {
+                          "paxSegmentRef": "S4",
+                          "serviceDefRefId": "BASRV53133F4A"
+                        }
+                      }
+                    },
+                    {
+                      "serviceId": "BASRV53133F4A_T3_S5",
+                      "paxRefId": "T3",
+                      "serviceAssociation": {
+                        "serviceDefRef": {
+                          "paxSegmentRef": "S5",
+                          "serviceDefRefId": "BASRV53133F4A"
+                        }
+                      }
+                    },
+                    {
+                      "serviceId": "BASRV654A9845-CO_T1_S4",
+                      "paxRefId": "T1",
+                      "serviceAssociation": {
+                        "serviceDefRef": {
+                          "paxSegmentRef": "S4",
+                          "serviceDefRefId": "BASRV654A9845-CO"
+                        }
+                      }
+                    },
+                    {
+                      "serviceId": "BASRV654A9845-CO_T1_S5",
+                      "paxRefId": "T1",
+                      "serviceAssociation": {
+                        "serviceDefRef": {
+                          "paxSegmentRef": "S5",
+                          "serviceDefRefId": "BASRV654A9845-CO"
+                        }
+                      }
+                    },
+                    {
+                      "serviceId": "BASRV654A9845-CO_T3_S4",
+                      "paxRefId": "T3",
+                      "serviceAssociation": {
+                        "serviceDefRef": {
+                          "paxSegmentRef": "S4",
+                          "serviceDefRefId": "BASRV654A9845-CO"
+                        }
+                      }
+                    },
+                    {
+                      "serviceId": "BASRV654A9845-CO_T3_S5",
+                      "paxRefId": "T3",
+                      "serviceAssociation": {
+                        "serviceDefRef": {
+                          "paxSegmentRef": "S5",
+                          "serviceDefRefId": "BASRV654A9845-CO"
+                        }
+                      }
+                    },
+                    {
+                      "serviceId": "SRV1-T1-S4",
+                      "paxRefId": "T1",
+                      "serviceAssociation": {
+                        "paxSegmentRef": "S4"
+                      }
+                    },
+                    {
+                      "serviceId": "SRV1-T1-S5",
+                      "paxRefId": "T1",
+                      "serviceAssociation": {
+                        "paxSegmentRef": "S5"
+                      }
+                    },
+                    {
+                      "serviceId": "SRV1-T3-S4",
+                      "paxRefId": "T3",
+                      "serviceAssociation": {
+                        "paxSegmentRef": "S4"
+                      }
+                    },
+                    {
+                      "serviceId": "SRV1-T3-S5",
+                      "paxRefId": "T3",
+                      "serviceAssociation": {
+                        "paxSegmentRef": "S5"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "orderItemId": "P6EA6D4BD-22B0-4C1D-8CF28tdxdkpbswr4e-1-2",
+                  "ownerCode": "EK",
+                  "price": {
+                    "totalAmount": {
+                      "currencyCode": "AED",
+                      "units": "1720"
+                    },
+                    "baseAmount": {
+                      "currencyCode": "AED",
+                      "units": "890"
+                    },
+                    "taxSummaries": [
+                      {
+                        "totalTaxAmount": {
+                          "currencyCode": "AED",
+                          "units": "830"
+                        }
+                      }
+                    ]
+                  },
+                  "fareDetails": [
+                    {
+                      "passengerRefs": [
+                        "T2"
+                      ],
+                      "price": {
+                        "totalAmount": {
+                          "currencyCode": "AED",
+                          "units": "1720"
+                        },
+                        "baseAmount": {
+                          "currencyCode": "AED",
+                          "units": "890"
+                        },
+                        "taxSummaries": [
+                          {
+                            "totalTaxAmount": {
+                              "units": "830"
+                            },
+                            "breakdown": [
+                              {
+                                "taxCode": "TU",
+                                "amount": {
+                                  "currencyCode": "AED",
+                                  "units": "190"
+                                }
+                              },
+                              {
+                                "taxCode": "ZR",
+                                "amount": {
+                                  "currencyCode": "AED",
+                                  "units": "5"
+                                }
+                              },
+                              {
+                                "taxCode": "F6",
+                                "amount": {
+                                  "currencyCode": "AED",
+                                  "units": "35"
+                                }
+                              },
+                              {
+                                "taxCode": "YQ",
+                                "amount": {
+                                  "currencyCode": "AED",
+                                  "units": "310"
+                                }
+                              },
+                              {
+                                "taxCode": "YQ",
+                                "amount": {
+                                  "currencyCode": "AED",
+                                  "units": "290"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      "fareComponents": [
+                        {
+                          "cabinName": "Economy Economy",
+                          "paxSegmentRefId": [
+                            "S4"
+                          ],
+                          "fbc": "QLSOPKE1CH",
+                          "rbd": "Q"
+                        },
+                        {
+                          "cabinName": "Economy Economy",
+                          "paxSegmentRefId": [
+                            "S5"
+                          ],
+                          "fbc": "QLSOPKE1CH",
+                          "rbd": "Q"
+                        }
+                      ]
+                    }
+                  ],
+                  "services": [
+                    {
+                      "serviceId": "BASRV53133F4A_T2_S4",
+                      "paxRefId": "T2",
+                      "serviceAssociation": {
+                        "serviceDefRef": {
+                          "paxSegmentRef": "S4",
+                          "serviceDefRefId": "BASRV53133F4A"
+                        }
+                      }
+                    },
+                    {
+                      "serviceId": "BASRV53133F4A_T2_S5",
+                      "paxRefId": "T2",
+                      "serviceAssociation": {
+                        "serviceDefRef": {
+                          "paxSegmentRef": "S5",
+                          "serviceDefRefId": "BASRV53133F4A"
+                        }
+                      }
+                    },
+                    {
+                      "serviceId": "BASRV654A9845-CO_T2_S4",
+                      "paxRefId": "T2",
+                      "serviceAssociation": {
+                        "serviceDefRef": {
+                          "paxSegmentRef": "S4",
+                          "serviceDefRefId": "BASRV654A9845-CO"
+                        }
+                      }
+                    },
+                    {
+                      "serviceId": "BASRV654A9845-CO_T2_S5",
+                      "paxRefId": "T2",
+                      "serviceAssociation": {
+                        "serviceDefRef": {
+                          "paxSegmentRef": "S5",
+                          "serviceDefRefId": "BASRV654A9845-CO"
+                        }
+                      }
+                    },
+                    {
+                      "serviceId": "SRV2-T2-S4",
+                      "paxRefId": "T2",
+                      "serviceAssociation": {
+                        "paxSegmentRef": "S4"
+                      }
+                    },
+                    {
+                      "serviceId": "SRV2-T2-S5",
+                      "paxRefId": "T2",
+                      "serviceAssociation": {
+                        "paxSegmentRef": "S5"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "orderItemId": "P6EA6D4BD-22B0-4C1D-8CF28tdxdkpbswr4e-1-3",
+                  "ownerCode": "EK",
+                  "price": {
+                    "totalAmount": {
+                      "currencyCode": "AED",
+                      "units": "120"
+                    },
+                    "baseAmount": {
+                      "currencyCode": "AED",
+                      "units": "120"
+                    },
+                    "taxSummaries": [
+                      {
+                        "totalTaxAmount": {
+                          "currencyCode": "AED"
+                        }
+                      }
+                    ]
+                  },
+                  "fareDetails": [
+                    {
+                      "passengerRefs": [
+                        "T3.1"
+                      ],
+                      "price": {
+                        "totalAmount": {
+                          "currencyCode": "AED",
+                          "units": "120"
+                        },
+                        "baseAmount": {
+                          "currencyCode": "AED",
+                          "units": "120"
+                        },
+                        "taxSummaries": [
+                          {
+                            "totalTaxAmount": {}
+                          }
+                        ]
+                      },
+                      "fareComponents": [
+                        {
+                          "cabinName": "Economy Economy",
+                          "paxSegmentRefId": [
+                            "S4"
+                          ],
+                          "fbc": "QLSOPKE1IN",
+                          "rbd": "Q"
+                        },
+                        {
+                          "cabinName": "Economy Economy",
+                          "paxSegmentRefId": [
+                            "S5"
+                          ],
+                          "fbc": "QLSOPKE1IN",
+                          "rbd": "Q"
+                        }
+                      ]
+                    }
+                  ],
+                  "services": [
+                    {
+                      "serviceId": "BASRV5E948D0E_T3.1_S4",
+                      "paxRefId": "T3.1",
+                      "serviceAssociation": {
+                        "serviceDefRef": {
+                          "paxSegmentRef": "S4",
+                          "serviceDefRefId": "BASRV5E948D0E"
+                        }
+                      }
+                    },
+                    {
+                      "serviceId": "BASRV5E948D0E_T3.1_S5",
+                      "paxRefId": "T3.1",
+                      "serviceAssociation": {
+                        "serviceDefRef": {
+                          "paxSegmentRef": "S5",
+                          "serviceDefRefId": "BASRV5E948D0E"
+                        }
+                      }
+                    },
+                    {
+                      "serviceId": "BASRV53E2CFBA-CO_T3.1_S4",
+                      "paxRefId": "T3.1",
+                      "serviceAssociation": {
+                        "serviceDefRef": {
+                          "paxSegmentRef": "S4",
+                          "serviceDefRefId": "BASRV53E2CFBA-CO"
+                        }
+                      }
+                    },
+                    {
+                      "serviceId": "BASRV53E2CFBA-CO_T3.1_S5",
+                      "paxRefId": "T3.1",
+                      "serviceAssociation": {
+                        "serviceDefRef": {
+                          "paxSegmentRef": "S5",
+                          "serviceDefRefId": "BASRV53E2CFBA-CO"
+                        }
+                      }
+                    },
+                    {
+                      "serviceId": "SRV3-T3.1-S4",
+                      "paxRefId": "T3.1",
+                      "serviceAssociation": {
+                        "paxSegmentRef": "S4"
+                      }
+                    },
+                    {
+                      "serviceId": "SRV3-T3.1-S5",
+                      "paxRefId": "T3.1",
+                      "serviceAssociation": {
+                        "paxSegmentRef": "S5"
+                      }
+                    }
+                  ]
+                }
+              ],
+              "totalPrice": {
+                "totalAmount": {
+                  "currencyCode": "AED",
+                  "units": "5860"
+                }
+              },
+              "bookingRefs": [
+                {
+                  "bookingId": "GGTJHF",
+                  "bookingEntity": {
+                    "carrierCode": "EK"
+                  },
+                  "bookingRefType": "PNR_NUMBER"
+                }
+              ]
+            },
+            "paymentFunctions": [
+              {
+                "orderAssociation": {
+                  "orderRefId": "GGTJHF",
+                  "ownerCode": "EK",
+                  "orderItemRefId": [
+                    "P6EA6D4BD-22B0-4C1D-8CF28tdxdkpbswr4e-1-1",
+                    "P6EA6D4BD-22B0-4C1D-8CF28tdxdkpbswr4e-1-2",
+                    "P6EA6D4BD-22B0-4C1D-8CF28tdxdkpbswr4e-1-3"
+                  ]
+                },
+                "paymentProcessingSummary": {
+                  "typeCode": "CA",
+                  "amount": {
+                    "currencyCode": "AED",
+                    "units": "5860"
+                  },
+                  "paymentStatus": "PAID"
+                }
+              }
+            ],
+            "ticketDocInfos": [
+              {
+                "paxRefId": "T1",
+                "tickets": [
+                  {
+                    "ticketNumber": "17657453366173",
+                    "coupons": [
+                      {
+                        "couponNumber": "1",
+                        "fareBasisCode": "QLSOPKE1",
+                        "couponStatusCode": "OPEN",
+                        "couponRefNumber": "S4"
+                      },
+                      {
+                        "couponNumber": "2",
+                        "fareBasisCode": "QLSOPKE1",
+                        "couponStatusCode": "OPEN",
+                        "couponRefNumber": "S5"
+                      }
+                    ],
+                    "reportingTypeCode": "AIRLINE",
+                    "ticketDocTypeCode": "E_TICKET",
+                    "dateOfIssue": {
+                      "year": 2023,
+                      "month": 7,
+                      "day": 4
+                    },
+                    "bookletQty": 1
+                  }
+                ],
+                "bookingAgency": {
+                  "agencyId": "AGY1969",
+                  "travelAgentId": "apitatestuser",
+                  "officeId": "OFF1953",
+                  "iataNumber": "86209966"
+                },
+                "servicingAgency": {
+                  "agencyId": "AGY1969",
+                  "travelAgentId": "apitatestuser",
+                  "officeId": "OFF1953",
+                  "iataNumber": "86209966"
+                }
+              },
+              {
+                "paxRefId": "T3",
+                "tickets": [
+                  {
+                    "ticketNumber": "17657453366184",
+                    "coupons": [
+                      {
+                        "couponNumber": "1",
+                        "fareBasisCode": "QLSOPKE1",
+                        "couponStatusCode": "OPEN",
+                        "couponRefNumber": "S4"
+                      },
+                      {
+                        "couponNumber": "2",
+                        "fareBasisCode": "QLSOPKE1",
+                        "couponStatusCode": "OPEN",
+                        "couponRefNumber": "S5"
+                      }
+                    ],
+                    "reportingTypeCode": "AIRLINE",
+                    "ticketDocTypeCode": "E_TICKET",
+                    "dateOfIssue": {
+                      "year": 2023,
+                      "month": 7,
+                      "day": 4
+                    },
+                    "bookletQty": 1
+                  }
+                ],
+                "bookingAgency": {
+                  "agencyId": "AGY1969",
+                  "travelAgentId": "apitatestuser",
+                  "officeId": "OFF1953",
+                  "iataNumber": "86209966"
+                },
+                "servicingAgency": {
+                  "agencyId": "AGY1969",
+                  "travelAgentId": "apitatestuser",
+                  "officeId": "OFF1953",
+                  "iataNumber": "86209966"
+                }
+              },
+              {
+                "paxRefId": "T3.1",
+                "tickets": [
+                  {
+                    "ticketNumber": "17657453366195",
+                    "coupons": [
+                      {
+                        "couponNumber": "1",
+                        "fareBasisCode": "QLSOPKE1IN",
+                        "couponStatusCode": "OPEN",
+                        "couponRefNumber": "S4"
+                      },
+                      {
+                        "couponNumber": "2",
+                        "fareBasisCode": "QLSOPKE1IN",
+                        "couponStatusCode": "OPEN",
+                        "couponRefNumber": "S5"
+                      }
+                    ],
+                    "reportingTypeCode": "AIRLINE",
+                    "ticketDocTypeCode": "E_TICKET",
+                    "dateOfIssue": {
+                      "year": 2023,
+                      "month": 7,
+                      "day": 4
+                    },
+                    "bookletQty": 1
+                  }
+                ],
+                "bookingAgency": {
+                  "agencyId": "AGY1969",
+                  "travelAgentId": "apitatestuser",
+                  "officeId": "OFF1953",
+                  "iataNumber": "86209966"
+                },
+                "servicingAgency": {
+                  "agencyId": "AGY1969",
+                  "travelAgentId": "apitatestuser",
+                  "officeId": "OFF1953",
+                  "iataNumber": "86209966"
+                }
+              },
+              {
+                "paxRefId": "T2",
+                "tickets": [
+                  {
+                    "ticketNumber": "17657453366206",
+                    "coupons": [
+                      {
+                        "couponNumber": "1",
+                        "fareBasisCode": "QLSOPKE1CH",
+                        "couponStatusCode": "OPEN",
+                        "couponRefNumber": "S4"
+                      },
+                      {
+                        "couponNumber": "2",
+                        "fareBasisCode": "QLSOPKE1CH",
+                        "couponStatusCode": "OPEN",
+                        "couponRefNumber": "S5"
+                      }
+                    ],
+                    "reportingTypeCode": "AIRLINE",
+                    "ticketDocTypeCode": "E_TICKET",
+                    "dateOfIssue": {
+                      "year": 2023,
+                      "month": 7,
+                      "day": 4
+                    },
+                    "bookletQty": 1
+                  }
+                ],
+                "bookingAgency": {
+                  "agencyId": "AGY1969",
+                  "travelAgentId": "apitatestuser",
+                  "officeId": "OFF1953",
+                  "iataNumber": "86209966"
+                },
+                "servicingAgency": {
+                  "agencyId": "AGY1969",
+                  "travelAgentId": "apitatestuser",
+                  "officeId": "OFF1953",
+                  "iataNumber": "86209966"
+                }
+              }
+            ],
+            "dataMap": {
+              "passengers": {
+                "T3.1": {
+                  "ptc": "INF",
+                  "individual": {
+                    "birthdate": "2022-07-10",
+                    "genderCode": "F",
+                    "givenNames": [
+                      "RITA"
+                    ],
+                    "surname": "JAMES"
+                  }
+                },
+                "T1": {
+                  "ptc": "ADT",
+                  "individual": {
+                    "birthdate": "1994-12-18",
+                    "genderCode": "M",
+                    "titleName": "MR",
+                    "givenNames": [
+                      "HARSHA"
+                    ],
+                    "surname": "BANGALORE"
+                  },
+                  "contactInfoRefId": "CT_T1"
+                },
+                "T2": {
+                  "ptc": "CHD",
+                  "individual": {
+                    "birthdate": "2017-02-16",
+                    "genderCode": "M",
+                    "titleName": "MSTR",
+                    "givenNames": [
+                      "JOHN"
+                    ],
+                    "surname": "ELEN"
+                  },
+                  "contactInfoRefId": "CT_T2"
+                },
+                "T3": {
+                  "ptc": "ADT",
+                  "individual": {
+                    "birthdate": "2000-01-17",
+                    "genderCode": "M",
+                    "titleName": "MR",
+                    "givenNames": [
+                      "ANUMON"
+                    ],
+                    "surname": "KERALA"
+                  },
+                  "contactInfoRefId": "CT_T3"
+                }
+              },
+              "contactInfos": {
+                "CT_T3": {
+                  "phone": [
+                    {
+                      "phoneNumber": "97108989898989"
+                    }
+                  ],
+                  "emailAddresses": [
+                    {
+                      "emailAddressText": "SREEKANTH.B@VERTEIL.COM"
+                    }
+                  ]
+                },
+                "CT_T2": {
+                  "phone": [
+                    {
+                      "phoneNumber": "97108989898989"
+                    }
+                  ],
+                  "emailAddresses": [
+                    {
+                      "emailAddressText": "SREEKANTH.B@VERTEIL.COM"
+                    }
+                  ]
+                },
+                "CT_T1": {
+                  "phone": [
+                    {
+                      "phoneNumber": "97108989898989"
+                    }
+                  ],
+                  "emailAddresses": [
+                    {
+                      "emailAddressText": "SREEKANTH.B@VERTEIL.COM"
+                    }
+                  ]
+                }
+              },
+              "paxSegments": {
+                "S4": {
+                  "dep": {
+                    "stationCode": "NBO",
+                    "terminalName": "1B",
+                    "schedDateTime": "2023-07-12T22:45"
+                  },
+                  "arrival": {
+                    "stationCode": "DXB",
+                    "terminalName": "3",
+                    "schedDateTime": "2023-07-13T04:50"
+                  },
+                  "duration": "PT5H5M",
+                  "marketingInfo": {
+                    "carrierCode": "EK",
+                    "flightNumber": "0722"
+                  }
+                },
+                "S5": {
+                  "dep": {
+                    "stationCode": "DXB",
+                    "terminalName": "3",
+                    "schedDateTime": "2023-07-13T08:20"
+                  },
+                  "arrival": {
+                    "stationCode": "CDG",
+                    "terminalName": "1",
+                    "schedDateTime": "2023-07-13T13:30"
+                  },
+                  "duration": "PT7H10M",
+                  "marketingInfo": {
+                    "carrierCode": "EK",
+                    "flightNumber": "0073"
+                  }
+                }
+              },
+              "baggageAllowances": {
+                "BA4708ABBF": {
+                  "pieceAllowances": [
+                    {
+                      "totalQty": 2
+                    }
+                  ]
+                },
+                "BAB7FD8A10-CO": {
+                  "pieceAllowances": [
+                    {
+                      "totalQty": 1
+                    }
+                  ]
+                },
+                "BA41FD60CA": {
+                  "pieceAllowances": [
+                    {
+                      "totalQty": 1
+                    }
+                  ]
+                },
+                "BAEA227E4D-CO": {
+                  "pieceAllowances": [
+                    {
+                      "totalQty": 1
+                    }
+                  ]
+                }
+              },
+              "serviceDefs": {
+                "ServiceID12CHLD": {
+                  "name": "CHLD",
+                  "desc": [
+                    {
+                      "descTexts": [
+                        "HK",
+                        "16FEB17"
+                      ]
+                    }
+                  ]
+                },
+                "ServiceID3TKNE": {
+                  "name": "TKNE",
+                  "desc": [
+                    {
+                      "descTexts": [
+                        "HK",
+                        "INF1765745336619C2"
+                      ]
+                    }
+                  ]
+                },
+                "ServiceID14DOCS": {
+                  "name": "DOCS",
+                  "desc": [
+                    {
+                      "descTexts": [
+                        "HK",
+                        "////17JAN00/M//KERALA/ANUMON"
+                      ]
+                    }
+                  ]
+                },
+                "A-OC-ICE": {
+                  "name": "ICE entertainment",
+                  "rfic": "A",
+                  "rficSubCode": "ICE",
+                  "desc": [
+                    {
+                      "descTexts": [
+                        "ICE entertainment",
+                        "Included"
+                      ]
+                    }
+                  ]
+                },
+                "A-OC-35M": {
+                  "name": "35% miles earned",
+                  "rfic": "A",
+                  "rficSubCode": "35M",
+                  "desc": [
+                    {
+                      "descTexts": [
+                        "35% miles earned",
+                        "Included"
+                      ]
+                    }
+                  ]
+                },
+                "BASRV53E2CFBA-CO": {
+                  "name": "BAG:Carry On Bag Allowance",
+                  "serviceDefAssociation": {
+                    "baggageAllowanceRefId": "BAEA227E4D-CO"
+                  },
+                  "desc": [
+                    {
+                      "category": "BAGGAGE_CARRYONALLOWANCE",
+                      "descTexts": [
+                        "Carry On Bag Allowance"
+                      ]
+                    }
+                  ]
+                },
+                "ServiceID8TKNE": {
+                  "name": "TKNE",
+                  "desc": [
+                    {
+                      "descTexts": [
+                        "HK",
+                        "1765745336618C1"
+                      ]
+                    }
+                  ]
+                },
+                "ServiceID2TKNE": {
+                  "name": "TKNE",
+                  "desc": [
+                    {
+                      "descTexts": [
+                        "HK",
+                        "1765745336620C2"
+                      ]
+                    }
+                  ]
+                },
+                "ServiceID10INFT": {
+                  "name": "INFT",
+                  "desc": [
+                    {
+                      "descTexts": [
+                        "HK",
+                        "JAMES/RITA 10JUL22"
+                      ]
+                    }
+                  ]
+                },
+                "A-OC-MUC": {
+                  "name": "UPGRADE:Mileage upgrade eligibility at time of check-in",
+                  "rfic": "A",
+                  "rficSubCode": "MUC",
+                  "desc": [
+                    {
+                      "descTexts": [
+                        "Mileage upgrade eligibility at time of check-in",
+                        "Included"
+                      ]
+                    }
+                  ]
+                },
+                "BASRV5E948D0E": {
+                  "name": "BAG:Checked Bag Allowance",
+                  "serviceDefAssociation": {
+                    "baggageAllowanceRefId": "BA41FD60CA"
+                  },
+                  "desc": [
+                    {
+                      "category": "BAGGAGE_CHECKEDALLOWANCE",
+                      "descTexts": [
+                        "Checked Bag Allowance"
+                      ]
+                    }
+                  ]
+                },
+                "ServiceID15DOCS": {
+                  "name": "DOCS",
+                  "desc": [
+                    {
+                      "descTexts": [
+                        "HK",
+                        "////16FEB17/M//ELEN/JOHN"
+                      ]
+                    }
+                  ]
+                },
+                "A-OC-HBG": {
+                  "name": "BAG:Hand luggage x 1 bag 7KG",
+                  "rfic": "A",
+                  "rficSubCode": "HBG",
+                  "desc": [
+                    {
+                      "category": "BAGGAGE",
+                      "descTexts": [
+                        "Hand luggage x 1 bag 7KG",
+                        "Included"
+                      ]
+                    }
+                  ]
+                },
+                "BASRV654A9845-CO": {
+                  "name": "BAG:Carry On Bag Allowance",
+                  "serviceDefAssociation": {
+                    "baggageAllowanceRefId": "BAB7FD8A10-CO"
+                  },
+                  "desc": [
+                    {
+                      "category": "BAGGAGE_CARRYONALLOWANCE",
+                      "descTexts": [
+                        "Carry On Bag Allowance"
+                      ]
+                    }
+                  ]
+                },
+                "ServiceID7TKNE": {
+                  "name": "TKNE",
+                  "desc": [
+                    {
+                      "descTexts": [
+                        "HK",
+                        "INF1765745336619C1"
+                      ]
+                    }
+                  ]
+                },
+                "ServiceID11INFT": {
+                  "name": "INFT",
+                  "desc": [
+                    {
+                      "descTexts": [
+                        "HK",
+                        "JAMES/RITA 10JUL22"
+                      ]
+                    }
+                  ]
+                },
+                "ServiceID6TKNE": {
+                  "name": "TKNE",
+                  "desc": [
+                    {
+                      "descTexts": [
+                        "HK",
+                        "1765745336620C1"
+                      ]
+                    }
+                  ]
+                },
+                "ServiceID9TKNE": {
+                  "name": "TKNE",
+                  "desc": [
+                    {
+                      "descTexts": [
+                        "HK",
+                        "1765745336617C1"
+                      ]
+                    }
+                  ]
+                },
+                "ServiceID13DOCS": {
+                  "name": "DOCS",
+                  "desc": [
+                    {
+                      "descTexts": [
+                        "HK",
+                        "////10JUL22/FI//JAMES/RITA"
+                      ]
+                    }
+                  ]
+                },
+                "A-OC-ALC": {
+                  "name": "Soft and Alcoholic refreshments",
+                  "rfic": "A",
+                  "rficSubCode": "ALC",
+                  "desc": [
+                    {
+                      "descTexts": [
+                        "Soft and Alcoholic refreshments",
+                        "Included"
+                      ]
+                    }
+                  ]
+                },
+                "A-OC-WIF-ENT": {
+                  "name": "Complimentary Wi-Fi",
+                  "rfic": "A",
+                  "rficSubCode": "WIF",
+                  "desc": [
+                    {
+                      "descTexts": [
+                        "Complimentary Wi-Fi",
+                        "Included"
+                      ]
+                    }
+                  ]
+                },
+                "ServiceID4TKNE": {
+                  "name": "TKNE",
+                  "desc": [
+                    {
+                      "descTexts": [
+                        "HK",
+                        "1765745336618C2"
+                      ]
+                    }
+                  ]
+                },
+                "BASRV53133F4A": {
+                  "name": "BAG:Checked Bag Allowance",
+                  "serviceDefAssociation": {
+                    "baggageAllowanceRefId": "BA4708ABBF"
+                  },
+                  "desc": [
+                    {
+                      "category": "BAGGAGE_CHECKEDALLOWANCE",
+                      "descTexts": [
+                        "Checked Bag Allowance"
+                      ]
+                    }
+                  ]
+                },
+                "ServiceID16DOCS": {
+                  "name": "DOCS",
+                  "desc": [
+                    {
+                      "descTexts": [
+                        "HK",
+                        "////18DEC94/M//BANGALORE/HARSHA"
+                      ]
+                    }
+                  ]
+                },
+                "ServiceID1OSI1": {
+                  "name": "OSI1",
+                  "desc": [
+                    {
+                      "descTexts": [
+                        "OFFICE 408 AL FAJER COMPLEX UMM HURAIR RD OUD METHA PO BOX2403 DUBAI 2403 AE-1KERALA/ANUMONMR2403 DUBAI 2403 AE-1BANGALORE/HARSHAMR2403 DUBAI 2403 AE"
+                      ]
+                    }
+                  ]
+                },
+                "ServiceID5TKNE": {
+                  "name": "TKNE",
+                  "desc": [
+                    {
+                      "descTexts": [
+                        "HK",
+                        "1765745336617C2"
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      ],
+      "orderVersion": 1,
+      "distributionChain": [
+        {
+          "ordinal": 1,
+          "orgRole": "SELLER",
+          "participatingOrg": {
+            "orgId": "AGY1969"
+          },
+          "salesAgentId": "apitatestuser",
+          "salesBranchId": "OFF1953"
+        }
+      ]
+    }
+  ]
+}

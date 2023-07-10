@@ -2,8 +2,10 @@ package com.verteil.traacsbackofficeconnector.service.Impl;
 
 import com.google.protobuf.ProtocolStringList;
 import com.google.type.Date;
+import com.sun.tools.javac.Main;
 import com.verteil.air.v3.common.*;
 import com.verteil.air.v3.order.BookingRef;
+import com.verteil.air.v3.order.OrderedOrderItem;
 import com.verteil.traacsbackofficeconnector.dto.response.*;
 import com.verteil.traacsbackofficeconnector.service.OCNDataCollectorService;
 import com.verteil.traacsbackofficeconnector.util.DataDTOParser;
@@ -19,6 +21,7 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.*;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 @Service
 @Slf4j
@@ -66,13 +69,13 @@ public class OCNDataCollectorServiceImpl implements OCNDataCollectorService {
         //STR_TICKET_NO
         String ticketNumberWithoutTrim = orderChangeNotif.getChangeOperationGroupList().stream()
                 .flatMap(a -> a.getChangeOperationsList().stream()
-                        .flatMap(b -> b.getNew().getTicketDocInfosList().stream()
+                        .flatMap(b -> b.getNew().getTicketDocInfosList().stream().sorted(Comparator.comparing(TicketDocInfo::getPaxRefId))
                                 .flatMap(c -> c.getTicketsList().stream()
                                         .map(Ticket::getTicketNumber)))).findAny().orElse(null);
         List<Ticket> allTicketList = orderChangeNotif.getChangeOperationGroupList()
                 .stream()
                 .flatMap(a -> a.getChangeOperationsList().stream()
-                        .flatMap(b -> b.getNew().getTicketDocInfosList().stream()
+                        .flatMap(b -> b.getNew().getTicketDocInfosList().stream().sorted(Comparator.comparing(TicketDocInfo::getPaxRefId))
                                 .flatMap(c -> c.getTicketsList().stream()))).toList();
         List<String> ticketList = new ArrayList<>();
         for (Ticket tickets : allTicketList) {
@@ -81,7 +84,8 @@ public class OCNDataCollectorServiceImpl implements OCNDataCollectorService {
         String ticketNumber = null;
         String airlineNumericCode = null;
         if (ticketNumberWithoutTrim != null) {
-            ticketNumber = ticketNumberWithoutTrim.substring(3, 13);
+            String ticket = ticketNumberWithoutTrim.replace("-", "");
+            ticketNumber = ticket.substring(3, 13);
             //STR_AIRLINE_NUMERIC_CODE
             airlineNumericCode = ticketNumberWithoutTrim.substring(0, 3);
         }
@@ -95,19 +99,26 @@ public class OCNDataCollectorServiceImpl implements OCNDataCollectorService {
                         .map(b -> b.getNew().getOrder().getOwnerCode())).findAny().orElse(null);
         parsedData.setAirlineOwnerCode(airlineOwnerCode);
 
-//        //STR_PAX_NAME
-        List<ProtocolStringList> anyGivenName = orderChangeNotif.getChangeOperationGroupList().stream()
+        //STR_PAX_TYPE
+        List<String> paxType = orderChangeNotif.getChangeOperationGroupList().stream()
                 .flatMap(a -> a.getChangeOperationsList().stream()
-                        .flatMap(b -> b.getNew().getDataMap().getPassengersMap().values().stream()
-                                .map(c -> c.getIndividual().getGivenNamesList()))).toList();
-        List<String> givenName = new ArrayList<>();
-        for (ProtocolStringList protocolStringList : anyGivenName) {
-            givenName.addAll(protocolStringList);
-        }
-        if (givenName != null && !givenName.isEmpty()) {
-            parsedData.setGivenName(givenName);
-        } else parsedData.setGivenName(null);
+                        .flatMap(b -> b.getNew().getDataMap().getPassengersMap().values().stream().sorted(Comparator.comparing(Pax::getPaxRefId))
+                                .map(c -> c.getPtc().toString()))).collect(Collectors.toCollection(ArrayList::new));
+        Collections.reverse(paxType);
+        if (!paxType.isEmpty()) {
+            parsedData.setPaxType(paxType);
+        } else parsedData.setPaxType(null);
 
+//        //STR_PAX_NAME
+        List<String> givenName = orderChangeNotif.getChangeOperationGroupList().stream()
+                .flatMap(a -> a.getChangeOperationsList().stream()
+                        .flatMap(b -> b.getNew().getDataMap().getPassengersMap().values().stream().sorted(Comparator.comparing(Pax::getPaxRefId))
+                                .flatMap(c -> { List<String> givenNames = c.getIndividual().getGivenNamesList();
+                                    return Optional.ofNullable(givenNames).stream().flatMap(List::stream);}))).collect(Collectors.toList());
+        Collections.reverse(givenName);
+        if (!givenName.isEmpty() && givenName != null) {
+            parsedData.setGivenName(givenName);
+        }
 ////        //STR_ADDITIONAL_PAX
 //        List<ProtocolStringList> list = orderChangeNotif.getChangeOperationGroupList().stream()
 //                .flatMap(a -> a.getChangeOperationsList().stream()
@@ -127,7 +138,7 @@ public class OCNDataCollectorServiceImpl implements OCNDataCollectorService {
                                 .map(c -> c.getArrival().getStationCode()))).toList();
         List<String> allStationCode = new ArrayList<>();
         String station = null;
-        if (!stationArrivalCode.isEmpty() && !stationDepartureCode.isEmpty()){
+        if (!stationArrivalCode.isEmpty() && !stationDepartureCode.isEmpty()) {
             int maxSize = Math.max(stationDepartureCode.size(), stationArrivalCode.size());
             for (int i = 0; i < maxSize; i++) {
                 if (i < stationDepartureCode.size() && !stationDepartureCode.get(i).equals(station)) {
@@ -153,7 +164,9 @@ public class OCNDataCollectorServiceImpl implements OCNDataCollectorService {
         parsedData.setRbd(rbd);
 
         //CHR_RETURN_CLASS
-
+//
+        List<String> stringStream = orderChangeNotif.getChangeOperationGroupList().stream()
+                .flatMap(a -> a.getChangeOperationsList().stream().flatMap(b -> b.getNew().getTicketDocInfosList().stream().sorted(Comparator.comparing(TicketDocInfo::getPaxRefId)).map(TicketDocInfo::getPaxRefId))).toList();
         //STR_BOOKING_AGENCY_IATA_NO
         String iataNumber = orderChangeNotif.getChangeOperationGroupList().stream()
                 .flatMap(a -> a.getChangeOperationsList().stream()
@@ -200,16 +213,19 @@ public class OCNDataCollectorServiceImpl implements OCNDataCollectorService {
         //Individual's List
         List<Individual> individualsList = orderChangeNotif.getChangeOperationGroupList().stream()
                 .flatMap(a -> a.getChangeOperationsList().stream()
-                        .flatMap(b -> b.getNew().getDataMap().getPassengersMap().values().stream()
-                                .map(Pax::getIndividual))).toList();
+                        .flatMap(b -> b.getNew().getDataMap().getPassengersMap().values().stream().sorted(Comparator.comparing(Pax::getPaxRefId))
+                                .map(Pax::getIndividual))).collect(Collectors.toCollection(ArrayList::new));
+        Collections.reverse(individualsList);
         parsedData.setIndividualsList(individualsList);
-
-        //STR_PAX_TYPE
-        String paxType = orderChangeNotif.getChangeOperationGroupList().stream()
+        //ListOfPax
+        List<Pax> listOfPax = orderChangeNotif.getChangeOperationGroupList().stream()
                 .flatMap(a -> a.getChangeOperationsList().stream()
                         .flatMap(b -> b.getNew().getDataMap().getPassengersMap().values().stream()
-                                .map(c -> c.getPtc().toString()))).collect(Collectors.joining(", "));
-        parsedData.setPaxType(paxType);
+                                .sorted(Comparator.comparing(Pax::getPaxRefId)))).collect(Collectors.toCollection(ArrayList::new));
+        Collections.reverse(listOfPax);
+        if (!listOfPax.isEmpty()) {
+            parsedData.setPax(listOfPax);
+        } else parsedData.setPax(null);
 
         //STR_TRAVEL_DATE
         List<String> anySchedDateTime = orderChangeNotif.getChangeOperationGroupList().stream()
@@ -218,15 +234,15 @@ public class OCNDataCollectorServiceImpl implements OCNDataCollectorService {
                                 .map(c -> c.getDep().getSchedDateTime()))).toList();
         String travelDate = null;
         String returnDate = null;
-        if (anySchedDateTime != null && !anySchedDateTime.isEmpty()) {
+        if (!anySchedDateTime.isEmpty()) {
             DateTimeFormatter inputFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm");
             LocalDateTime dateTime = LocalDateTime.parse(anySchedDateTime.get(0), inputFormatter);
-            if(anySchedDateTime.size()>1) {
-                LocalDateTime dateTime2 = LocalDateTime.parse(anySchedDateTime.get(1), inputFormatter);
+            if (anySchedDateTime.size() > 1) {
+                LocalDateTime dateTime2 = LocalDateTime.parse(anySchedDateTime.get(0), inputFormatter);
+                dateTime = LocalDateTime.parse(anySchedDateTime.get(1), inputFormatter);
                 DateTimeFormatter outputFormatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
                 returnDate = dateTime2.format(outputFormatter);
-            }
-            else returnDate = null;
+            } else returnDate = null;
             DateTimeFormatter outputFormatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
             travelDate = dateTime.format(outputFormatter);
 
@@ -288,7 +304,14 @@ public class OCNDataCollectorServiceImpl implements OCNDataCollectorService {
 
         //DBL_PURCHASE_CUR_TOTAL_TAX_CREDIT_CARD
         //same as DBL_PURCHASE_CUR_TOTAL_TAX
-
+        List<FareDetail> fareDetailsList = orderChangeNotif.getChangeOperationGroupList().stream()
+                .flatMap(a -> a.getChangeOperationsList().stream()
+                        .flatMap(b -> b.getNew().getOrder().getOrderItemsList().stream()
+                                .flatMap(c -> c.getFareDetailsList().stream().sorted(Comparator.comparing(fareDetail -> fareDetail.getPassengerRefsList().get(0))))))
+                .toList();
+        if (!fareDetailsList.isEmpty()) {
+            parsedData.setFareDetailsList(fareDetailsList);
+        }
         //DBL_PURCHASE_CUR_SUPPLIER_AMOUNT
         Long anySupplierAmount = orderChangeNotif.getChangeOperationGroupList().stream()
                 .flatMap(a -> a.getChangeOperationsList().stream()
@@ -311,9 +334,10 @@ public class OCNDataCollectorServiceImpl implements OCNDataCollectorService {
                                 .flatMap(c -> c.getTicketsList().stream()
                                         .map(d -> d.getTicketDocTypeCode().toString())))).findAny().orElse(null);
         String ticketType = null;
-        assert anyTicketType != null;
-        if (anyTicketType.equalsIgnoreCase("E_TICKET")) {
-            ticketType = "ET";
+        if (anyTicketType != null && !anyTicketType.isEmpty()) {
+            if (anyTicketType.equalsIgnoreCase("E_TICKET")) {
+                ticketType = "ET";
+            }
         }
         parsedData.setTicketType(ticketType);
 

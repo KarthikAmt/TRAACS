@@ -4,6 +4,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.verteil.traacsbackofficeconnector.service.OCNDataCollectorService;
 import com.verteil.traacsbackofficeconnector.util.EventDeserializerUtil;
 import com.verteil.traacsbackofficeconnector.util.GenericResponse;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -16,6 +17,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 
 @RestController
+@Slf4j
 public class OCNPublisher {
     private final KafkaTemplate<String, byte[]> template;
     private final EventDeserializerUtil eventDeserializerUtil;
@@ -31,7 +33,7 @@ public class OCNPublisher {
 
     @PostMapping("consumeJSON")
     public String readMessage() {
-        String filepath = "/home/karthik/traacs-backoffice-connector/src/main/resources/OCN-Invoice-SinglePax-OneWay.json";
+        String filepath = "/home/karthik/traacs-backoffice-connector/src/main/resources/OCN-InvoiceSinglePax-OneWay.json";
         byte[] bytes = null;
         try {
             Path path = Paths.get(filepath);
@@ -46,6 +48,7 @@ public class OCNPublisher {
         } catch (IOException e) {
             e.getMessage();
         }
+        log.info("Producing JSON data :{}",bytes);
           template.send(topic, bytes);
         return "Data Published";
     }
